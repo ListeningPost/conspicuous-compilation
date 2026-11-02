@@ -1,0 +1,19 @@
+{
+  "experiment": "selector-uniformity (Method C)",
+  "note": "median_chi2 is the robust reproducible statistic; consecutive_repeat_rate is a live-timing quantity that varies with CPU/clock state and is reported as a range only",
+  "headline_k8_median_chi2_uniform": 4.41,
+  "headline_k8_df": 7,
+  "headline_k8_chi2_crit_p05": 14.067,
+  "headline_k8_median_consecutive_repeat_rate": 0.133,
+  "n_calls_per_rep": 1000000,
+  "reps": 15,
+  "selector": "murmurhash3_finalizer(SystemTime::now nanos) % K",
+  "rows": [
+    { "k": 2, "median_chi2_uniform": 0.12, "df": 1, "chi2_crit_p05": 3.84, "median_consecutive_repeat_rate": 0.453261, "repeat_rate_min": 0.443778, "repeat_rate_max": 0.462456, "expected_1_over_k": 0.500000 },
+    { "k": 4, "median_chi2_uniform": 2.68, "df": 3, "chi2_crit_p05": 7.82, "median_consecutive_repeat_rate": 0.275170, "repeat_rate_min": 0.271631, "repeat_rate_max": 0.276599, "expected_1_over_k": 0.250000 },
+    { "k": 8, "median_chi2_uniform": 4.41, "df": 7, "chi2_crit_p05": 14.07, "median_consecutive_repeat_rate": 0.132938, "repeat_rate_min": 0.130717, "repeat_rate_max": 0.133796, "expected_1_over_k": 0.125000 },
+    { "k": 16, "median_chi2_uniform": 16.23, "df": 15, "chi2_crit_p05": 25.00, "median_consecutive_repeat_rate": 0.080884, "repeat_rate_min": 0.077659, "repeat_rate_max": 0.082175, "expected_1_over_k": 0.062500 },
+    { "k": 32, "median_chi2_uniform": 23.58, "df": 31, "chi2_crit_p05": 44.98, "median_consecutive_repeat_rate": 0.039214, "repeat_rate_min": 0.037709, "repeat_rate_max": 0.040115, "expected_1_over_k": 0.031250 },
+    { "k": 64, "median_chi2_uniform": 48.17, "df": 63, "chi2_crit_p05": 82.53, "median_consecutive_repeat_rate": 0.018092, "repeat_rate_min": 0.016928, "repeat_rate_max": 0.018896, "expected_1_over_k": 0.015625 }
+  ]
+}

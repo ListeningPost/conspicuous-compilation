@@ -1,0 +1,16 @@
+BENCH fn_lcg 6
+BENCH fn_even_fib_sum 6
+BENCH fn_collatz_len 86
+BENCH fn_popcount_mix 14
+BENCH fn_branch_ladder 8
+BENCH fn_gcd_sum 4070
+BENCH fn_bitrev 19
+BENCH fn_sbox_round 31
+BENCH fn_sum_primes 27379
+BENCH fn_matrix_trace 9
+BENCH fn_crc_like 48
+BENCH fn_state_machine 78
+BENCH fn_nested_loops 290
+BENCH fn_hash_probe 8
+BENCH fn_saturating_ops 50
+BENCH fn_poly_eval 6

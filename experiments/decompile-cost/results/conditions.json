@@ -1,0 +1,159 @@
+{
+  "seed": "7",
+  "corpus_functions": [
+    "fn_lcg",
+    "fn_even_fib_sum",
+    "fn_collatz_len",
+    "fn_popcount_mix",
+    "fn_branch_ladder",
+    "fn_gcd_sum",
+    "fn_bitrev",
+    "fn_sbox_round",
+    "fn_sum_primes",
+    "fn_matrix_trace",
+    "fn_crc_like",
+    "fn_state_machine",
+    "fn_nested_loops",
+    "fn_hash_probe",
+    "fn_saturating_ops",
+    "fn_poly_eval"
+  ],
+  "gate_checksum": "CHECKSUM=17786522303719185614",
+  "conditions": [
+    {
+      "condition": "plain",
+      "attr": "#[inline(never)]",
+      "binary": "/home/wsb/Documents/Binaries/LLNV_adjusted/experiments/decompile-cost/results/bin/corpus_plain",
+      "sha256": "d71a1f83a38bd913b70eb8ec915fdfd91ab251a7c26d46beda8686cf1f7db82e",
+      "size_bytes": 455368,
+      "checksum": "CHECKSUM=17786522303719185614",
+      "checksum_ok": true
+    },
+    {
+      "condition": "m1_j64",
+      "attr": "#[llnv_obfuscate(flatten=1, harden=0, jumps=64)]",
+      "binary": "/home/wsb/Documents/Binaries/LLNV_adjusted/experiments/decompile-cost/results/bin/corpus_m1_j64",
+      "sha256": "78f8f235ed62c28441dc761ac1f76c99129d91f14852ce609b14d7a5cb5a322f",
+      "size_bytes": 455376,
+      "checksum": "CHECKSUM=17786522303719185614",
+      "checksum_ok": true
+    },
+    {
+      "condition": "m2_d2",
+      "attr": "#[llnv_obfuscate(flatten=0, harden=1, mba_depth=2)]",
+      "binary": "/home/wsb/Documents/Binaries/LLNV_adjusted/experiments/decompile-cost/results/bin/corpus_m2_d2",
+      "sha256": "4c61bd0680323bae1e830749eb58ffa732beb56b94bc85a4fdd5ea7a7b378cd8",
+      "size_bytes": 460672,
+      "checksum": "CHECKSUM=17786522303719185614",
+      "checksum_ok": true
+    },
+    {
+      "condition": "both_j64_d2",
+      "attr": "#[llnv_obfuscate(flatten=1, harden=1, jumps=64, mba_depth=2)]",
+      "binary": "/home/wsb/Documents/Binaries/LLNV_adjusted/experiments/decompile-cost/results/bin/corpus_both_j64_d2",
+      "sha256": "8fd85e3dbaf93afcc8a3b2bed94030c3208d21ad37c88fb0973aa7aee4cb1ef8",
+      "size_bytes": 664288,
+      "checksum": "CHECKSUM=17786522303719185614",
+      "checksum_ok": true
+    },
+    {
+      "condition": "both_j8_d2",
+      "attr": "#[llnv_obfuscate(flatten=1, harden=1, jumps=8, mba_depth=2)]",
+      "binary": "/home/wsb/Documents/Binaries/LLNV_adjusted/experiments/decompile-cost/results/bin/corpus_both_j8_d2",
+      "sha256": "7bc92a9e775eb62d81b6ac516386fc73db458c6cf0c86f9651103fb5bb82084d",
+      "size_bytes": 487800,
+      "checksum": "CHECKSUM=17786522303719185614",
+      "checksum_ok": true
+    },
+    {
+      "condition": "both_j16_d2",
+      "attr": "#[llnv_obfuscate(flatten=1, harden=1, jumps=16, mba_depth=2)]",
+      "binary": "/home/wsb/Documents/Binaries/LLNV_adjusted/experiments/decompile-cost/results/bin/corpus_both_j16_d2",
+      "sha256": "d2377ff1e3f1455e21710fc44d87fdebd90a150f2492b7be171fba8b7322c38a",
+      "size_bytes": 513088,
+      "checksum": "CHECKSUM=17786522303719185614",
+      "checksum_ok": true
+    },
+    {
+      "condition": "both_j32_d2",
+      "attr": "#[llnv_obfuscate(flatten=1, harden=1, jumps=32, mba_depth=2)]",
+      "binary": "/home/wsb/Documents/Binaries/LLNV_adjusted/experiments/decompile-cost/results/bin/corpus_both_j32_d2",
+      "sha256": "e967b684f29dea7907e396d1a28254cbc20e3f080e39430a7857431e5a7bb5ee",
+      "size_bytes": 564416,
+      "checksum": "CHECKSUM=17786522303719185614",
+      "checksum_ok": true
+    },
+    {
+      "condition": "both_j128_d2",
+      "attr": "#[llnv_obfuscate(flatten=1, harden=1, jumps=128, mba_depth=2)]",
+      "binary": "/home/wsb/Documents/Binaries/LLNV_adjusted/experiments/decompile-cost/results/bin/corpus_both_j128_d2",
+      "sha256": "1d53fd25542255407baca21e2817257c153a588ded158b4135f7a47ef017eac7",
+      "size_bytes": 872224,
+      "checksum": "CHECKSUM=17786522303719185614",
+      "checksum_ok": true
+    },
+    {
+      "condition": "both_j256_d2",
+      "attr": "#[llnv_obfuscate(flatten=1, harden=1, jumps=256, mba_depth=2)]",
+      "binary": "/home/wsb/Documents/Binaries/LLNV_adjusted/experiments/decompile-cost/results/bin/corpus_both_j256_d2",
+      "sha256": "4faf753905cdee959931b4c9c1f5c9a955d378d83396c8ad50c14c5ad7fa2dc9",
+      "size_bytes": 1292160,
+      "checksum": "CHECKSUM=17786522303719185614",
+      "checksum_ok": true
+    },
+    {
+      "condition": "both_j256_d4",
+      "attr": "#[llnv_obfuscate(flatten=1, harden=1, jumps=256, mba_depth=4)]",
+      "binary": "/home/wsb/Documents/Binaries/LLNV_adjusted/experiments/decompile-cost/results/bin/corpus_both_j256_d4",
+      "sha256": "28afa5d8c05d0ee70ede6d27e2ac86a15218ca48f709894a7857f00556272286",
+      "size_bytes": 1720384,
+      "checksum": "CHECKSUM=17786522303719185614",
+      "checksum_ok": true
+    },
+    {
+      "condition": "m1_j8",
+      "attr": "#[llnv_obfuscate(flatten=1, harden=0, jumps=8)]",
+      "binary": "/home/wsb/Documents/Binaries/LLNV_adjusted/experiments/decompile-cost/results/bin/corpus_m1_j8",
+      "sha256": "c4daa9ed016593564bf57b7def4eb35dce664d7c6571704cdc779efdde312656",
+      "size_bytes": 455376,
+      "checksum": "CHECKSUM=17786522303719185614",
+      "checksum_ok": true
+    },
+    {
+      "condition": "m1_j16",
+      "attr": "#[llnv_obfuscate(flatten=1, harden=0, jumps=16)]",
+      "binary": "/home/wsb/Documents/Binaries/LLNV_adjusted/experiments/decompile-cost/results/bin/corpus_m1_j16",
+      "sha256": "7ec537fbad9e6577192abd1ced64ca95d1f773db3246c9112c988cbc1756fa8d",
+      "size_bytes": 455376,
+      "checksum": "CHECKSUM=17786522303719185614",
+      "checksum_ok": true
+    },
+    {
+      "condition": "m1_j32",
+      "attr": "#[llnv_obfuscate(flatten=1, harden=0, jumps=32)]",
+      "binary": "/home/wsb/Documents/Binaries/LLNV_adjusted/experiments/decompile-cost/results/bin/corpus_m1_j32",
+      "sha256": "1c548eabc6c2ef874360c48c17f821f7c79eae0ac1bdea458071c32bf662ae1b",
+      "size_bytes": 455376,
+      "checksum": "CHECKSUM=17786522303719185614",
+      "checksum_ok": true
+    },
+    {
+      "condition": "m1_j128",
+      "attr": "#[llnv_obfuscate(flatten=1, harden=0, jumps=128)]",
+      "binary": "/home/wsb/Documents/Binaries/LLNV_adjusted/experiments/decompile-cost/results/bin/corpus_m1_j128",
+      "sha256": "e1c266e5bf5e91cbcaefe424155fdd4d7ce5cce403ed67a3912d74e0c9edec75",
+      "size_bytes": 455376,
+      "checksum": "CHECKSUM=17786522303719185614",
+      "checksum_ok": true
+    },
+    {
+      "condition": "m1_j256",
+      "attr": "#[llnv_obfuscate(flatten=1, harden=0, jumps=256)]",
+      "binary": "/home/wsb/Documents/Binaries/LLNV_adjusted/experiments/decompile-cost/results/bin/corpus_m1_j256",
+      "sha256": "9c488bcdbe9b68698a1578e72cc25587f62189c0b546f926a6a7460ba5b90125",
+      "size_bytes": 455376,
+      "checksum": "CHECKSUM=17786522303719185614",
+      "checksum_ok": true
+    }
+  ]
+}

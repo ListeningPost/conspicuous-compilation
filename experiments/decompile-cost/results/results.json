@@ -1,0 +1,1843 @@
+{
+  "meta": {
+    "gate_checksum": "CHECKSUM=17786522303719185614",
+    "seed": "7",
+    "functions": [
+      "fn_lcg",
+      "fn_even_fib_sum",
+      "fn_collatz_len",
+      "fn_popcount_mix",
+      "fn_branch_ladder",
+      "fn_gcd_sum",
+      "fn_bitrev",
+      "fn_sbox_round",
+      "fn_sum_primes",
+      "fn_matrix_trace",
+      "fn_crc_like",
+      "fn_state_machine",
+      "fn_nested_loops",
+      "fn_hash_probe",
+      "fn_saturating_ops",
+      "fn_poly_eval"
+    ]
+  },
+  "records": [
+    {
+      "condition": "plain",
+      "function": "fn_lcg",
+      "decompile_median_ms": 0,
+      "decompile_body_bytes": 34,
+      "runtime_ns": 3
+    },
+    {
+      "condition": "plain",
+      "function": "fn_even_fib_sum",
+      "decompile_median_ms": 0,
+      "decompile_body_bytes": 29,
+      "runtime_ns": 1
+    },
+    {
+      "condition": "plain",
+      "function": "fn_collatz_len",
+      "decompile_median_ms": 2,
+      "decompile_body_bytes": 107,
+      "runtime_ns": 79
+    },
+    {
+      "condition": "plain",
+      "function": "fn_popcount_mix",
+      "decompile_median_ms": 20,
+      "decompile_body_bytes": 630,
+      "runtime_ns": 9
+    },
+    {
+      "condition": "plain",
+      "function": "fn_branch_ladder",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 165,
+      "runtime_ns": 3
+    },
+    {
+      "condition": "plain",
+      "function": "fn_gcd_sum",
+      "decompile_median_ms": 5,
+      "decompile_body_bytes": 205,
+      "runtime_ns": 4088
+    },
+    {
+      "condition": "plain",
+      "function": "fn_bitrev",
+      "decompile_median_ms": 2,
+      "decompile_body_bytes": 70,
+      "runtime_ns": 15
+    },
+    {
+      "condition": "plain",
+      "function": "fn_sbox_round",
+      "decompile_median_ms": 8,
+      "decompile_body_bytes": 400,
+      "runtime_ns": 29
+    },
+    {
+      "condition": "plain",
+      "function": "fn_sum_primes",
+      "decompile_median_ms": 5,
+      "decompile_body_bytes": 168,
+      "runtime_ns": 27653
+    },
+    {
+      "condition": "plain",
+      "function": "fn_matrix_trace",
+      "decompile_median_ms": 2,
+      "decompile_body_bytes": 131,
+      "runtime_ns": 2
+    },
+    {
+      "condition": "plain",
+      "function": "fn_crc_like",
+      "decompile_median_ms": 4,
+      "decompile_body_bytes": 208,
+      "runtime_ns": 39
+    },
+    {
+      "condition": "plain",
+      "function": "fn_state_machine",
+      "decompile_median_ms": 1,
+      "decompile_body_bytes": 106,
+      "runtime_ns": 61
+    },
+    {
+      "condition": "plain",
+      "function": "fn_nested_loops",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 114,
+      "runtime_ns": 292
+    },
+    {
+      "condition": "plain",
+      "function": "fn_hash_probe",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 167,
+      "runtime_ns": 4
+    },
+    {
+      "condition": "plain",
+      "function": "fn_saturating_ops",
+      "decompile_median_ms": 2,
+      "decompile_body_bytes": 94,
+      "runtime_ns": 44
+    },
+    {
+      "condition": "plain",
+      "function": "fn_poly_eval",
+      "decompile_median_ms": 1,
+      "decompile_body_bytes": 87,
+      "runtime_ns": 2
+    },
+    {
+      "condition": "m1_j64",
+      "function": "fn_lcg",
+      "decompile_median_ms": 1,
+      "decompile_body_bytes": 34,
+      "runtime_ns": 3
+    },
+    {
+      "condition": "m1_j64",
+      "function": "fn_even_fib_sum",
+      "decompile_median_ms": 0,
+      "decompile_body_bytes": 29,
+      "runtime_ns": 1
+    },
+    {
+      "condition": "m1_j64",
+      "function": "fn_collatz_len",
+      "decompile_median_ms": 2,
+      "decompile_body_bytes": 107,
+      "runtime_ns": 81
+    },
+    {
+      "condition": "m1_j64",
+      "function": "fn_popcount_mix",
+      "decompile_median_ms": 22,
+      "decompile_body_bytes": 630,
+      "runtime_ns": 9
+    },
+    {
+      "condition": "m1_j64",
+      "function": "fn_branch_ladder",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 165,
+      "runtime_ns": 3
+    },
+    {
+      "condition": "m1_j64",
+      "function": "fn_gcd_sum",
+      "decompile_median_ms": 5,
+      "decompile_body_bytes": 205,
+      "runtime_ns": 4192
+    },
+    {
+      "condition": "m1_j64",
+      "function": "fn_bitrev",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 70,
+      "runtime_ns": 15
+    },
+    {
+      "condition": "m1_j64",
+      "function": "fn_sbox_round",
+      "decompile_median_ms": 8,
+      "decompile_body_bytes": 400,
+      "runtime_ns": 31
+    },
+    {
+      "condition": "m1_j64",
+      "function": "fn_sum_primes",
+      "decompile_median_ms": 5,
+      "decompile_body_bytes": 168,
+      "runtime_ns": 27538
+    },
+    {
+      "condition": "m1_j64",
+      "function": "fn_matrix_trace",
+      "decompile_median_ms": 2,
+      "decompile_body_bytes": 131,
+      "runtime_ns": 3
+    },
+    {
+      "condition": "m1_j64",
+      "function": "fn_crc_like",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 208,
+      "runtime_ns": 38
+    },
+    {
+      "condition": "m1_j64",
+      "function": "fn_state_machine",
+      "decompile_median_ms": 1,
+      "decompile_body_bytes": 106,
+      "runtime_ns": 60
+    },
+    {
+      "condition": "m1_j64",
+      "function": "fn_nested_loops",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 114,
+      "runtime_ns": 293
+    },
+    {
+      "condition": "m1_j64",
+      "function": "fn_hash_probe",
+      "decompile_median_ms": 4,
+      "decompile_body_bytes": 167,
+      "runtime_ns": 4
+    },
+    {
+      "condition": "m1_j64",
+      "function": "fn_saturating_ops",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 94,
+      "runtime_ns": 44
+    },
+    {
+      "condition": "m1_j64",
+      "function": "fn_poly_eval",
+      "decompile_median_ms": 1,
+      "decompile_body_bytes": 87,
+      "runtime_ns": 2
+    },
+    {
+      "condition": "m2_d2",
+      "function": "fn_lcg",
+      "decompile_median_ms": 4,
+      "decompile_body_bytes": 389,
+      "runtime_ns": 2
+    },
+    {
+      "condition": "m2_d2",
+      "function": "fn_even_fib_sum",
+      "decompile_median_ms": 4,
+      "decompile_body_bytes": 325,
+      "runtime_ns": 3
+    },
+    {
+      "condition": "m2_d2",
+      "function": "fn_collatz_len",
+      "decompile_median_ms": 6,
+      "decompile_body_bytes": 401,
+      "runtime_ns": 82
+    },
+    {
+      "condition": "m2_d2",
+      "function": "fn_popcount_mix",
+      "decompile_median_ms": 24,
+      "decompile_body_bytes": 941,
+      "runtime_ns": 11
+    },
+    {
+      "condition": "m2_d2",
+      "function": "fn_branch_ladder",
+      "decompile_median_ms": 9,
+      "decompile_body_bytes": 532,
+      "runtime_ns": 3
+    },
+    {
+      "condition": "m2_d2",
+      "function": "fn_gcd_sum",
+      "decompile_median_ms": 8,
+      "decompile_body_bytes": 513,
+      "runtime_ns": 4073
+    },
+    {
+      "condition": "m2_d2",
+      "function": "fn_bitrev",
+      "decompile_median_ms": 6,
+      "decompile_body_bytes": 364,
+      "runtime_ns": 18
+    },
+    {
+      "condition": "m2_d2",
+      "function": "fn_sbox_round",
+      "decompile_median_ms": 12,
+      "decompile_body_bytes": 755,
+      "runtime_ns": 32
+    },
+    {
+      "condition": "m2_d2",
+      "function": "fn_sum_primes",
+      "decompile_median_ms": 7,
+      "decompile_body_bytes": 450,
+      "runtime_ns": 27507
+    },
+    {
+      "condition": "m2_d2",
+      "function": "fn_matrix_trace",
+      "decompile_median_ms": 4,
+      "decompile_body_bytes": 442,
+      "runtime_ns": 5
+    },
+    {
+      "condition": "m2_d2",
+      "function": "fn_crc_like",
+      "decompile_median_ms": 7,
+      "decompile_body_bytes": 576,
+      "runtime_ns": 45
+    },
+    {
+      "condition": "m2_d2",
+      "function": "fn_state_machine",
+      "decompile_median_ms": 6,
+      "decompile_body_bytes": 473,
+      "runtime_ns": 65
+    },
+    {
+      "condition": "m2_d2",
+      "function": "fn_nested_loops",
+      "decompile_median_ms": 6,
+      "decompile_body_bytes": 462,
+      "runtime_ns": 299
+    },
+    {
+      "condition": "m2_d2",
+      "function": "fn_hash_probe",
+      "decompile_median_ms": 6,
+      "decompile_body_bytes": 469,
+      "runtime_ns": 6
+    },
+    {
+      "condition": "m2_d2",
+      "function": "fn_saturating_ops",
+      "decompile_median_ms": 6,
+      "decompile_body_bytes": 445,
+      "runtime_ns": 46
+    },
+    {
+      "condition": "m2_d2",
+      "function": "fn_poly_eval",
+      "decompile_median_ms": 4,
+      "decompile_body_bytes": 383,
+      "runtime_ns": 4
+    },
+    {
+      "condition": "both_j64_d2",
+      "function": "fn_lcg",
+      "decompile_median_ms": 133,
+      "decompile_body_bytes": 12803,
+      "runtime_ns": 5
+    },
+    {
+      "condition": "both_j64_d2",
+      "function": "fn_even_fib_sum",
+      "decompile_median_ms": 160,
+      "decompile_body_bytes": 13521,
+      "runtime_ns": 5
+    },
+    {
+      "condition": "both_j64_d2",
+      "function": "fn_collatz_len",
+      "decompile_median_ms": 160,
+      "decompile_body_bytes": 12947,
+      "runtime_ns": 87
+    },
+    {
+      "condition": "both_j64_d2",
+      "function": "fn_popcount_mix",
+      "decompile_median_ms": 206,
+      "decompile_body_bytes": 14134,
+      "runtime_ns": 14
+    },
+    {
+      "condition": "both_j64_d2",
+      "function": "fn_branch_ladder",
+      "decompile_median_ms": 139,
+      "decompile_body_bytes": 12866,
+      "runtime_ns": 7
+    },
+    {
+      "condition": "both_j64_d2",
+      "function": "fn_gcd_sum",
+      "decompile_median_ms": 175,
+      "decompile_body_bytes": 12946,
+      "runtime_ns": 4053
+    },
+    {
+      "condition": "both_j64_d2",
+      "function": "fn_bitrev",
+      "decompile_median_ms": 164,
+      "decompile_body_bytes": 12922,
+      "runtime_ns": 18
+    },
+    {
+      "condition": "both_j64_d2",
+      "function": "fn_sbox_round",
+      "decompile_median_ms": 139,
+      "decompile_body_bytes": 13181,
+      "runtime_ns": 33
+    },
+    {
+      "condition": "both_j64_d2",
+      "function": "fn_sum_primes",
+      "decompile_median_ms": 173,
+      "decompile_body_bytes": 13704,
+      "runtime_ns": 27208
+    },
+    {
+      "condition": "both_j64_d2",
+      "function": "fn_matrix_trace",
+      "decompile_median_ms": 165,
+      "decompile_body_bytes": 13578,
+      "runtime_ns": 7
+    },
+    {
+      "condition": "both_j64_d2",
+      "function": "fn_crc_like",
+      "decompile_median_ms": 137,
+      "decompile_body_bytes": 13161,
+      "runtime_ns": 46
+    },
+    {
+      "condition": "both_j64_d2",
+      "function": "fn_state_machine",
+      "decompile_median_ms": 208,
+      "decompile_body_bytes": 12497,
+      "runtime_ns": 56
+    },
+    {
+      "condition": "both_j64_d2",
+      "function": "fn_nested_loops",
+      "decompile_median_ms": 125,
+      "decompile_body_bytes": 12518,
+      "runtime_ns": 291
+    },
+    {
+      "condition": "both_j64_d2",
+      "function": "fn_hash_probe",
+      "decompile_median_ms": 175,
+      "decompile_body_bytes": 13721,
+      "runtime_ns": 8
+    },
+    {
+      "condition": "both_j64_d2",
+      "function": "fn_saturating_ops",
+      "decompile_median_ms": 133,
+      "decompile_body_bytes": 12562,
+      "runtime_ns": 49
+    },
+    {
+      "condition": "both_j64_d2",
+      "function": "fn_poly_eval",
+      "decompile_median_ms": 160,
+      "decompile_body_bytes": 13555,
+      "runtime_ns": 6
+    },
+    {
+      "condition": "both_j8_d2",
+      "function": "fn_lcg",
+      "decompile_median_ms": 14,
+      "decompile_body_bytes": 1965,
+      "runtime_ns": 5
+    },
+    {
+      "condition": "both_j8_d2",
+      "function": "fn_even_fib_sum",
+      "decompile_median_ms": 19,
+      "decompile_body_bytes": 2018,
+      "runtime_ns": 4
+    },
+    {
+      "condition": "both_j8_d2",
+      "function": "fn_collatz_len",
+      "decompile_median_ms": 20,
+      "decompile_body_bytes": 2098,
+      "runtime_ns": 85
+    },
+    {
+      "condition": "both_j8_d2",
+      "function": "fn_popcount_mix",
+      "decompile_median_ms": 40,
+      "decompile_body_bytes": 2637,
+      "runtime_ns": 13
+    },
+    {
+      "condition": "both_j8_d2",
+      "function": "fn_branch_ladder",
+      "decompile_median_ms": 18,
+      "decompile_body_bytes": 2026,
+      "runtime_ns": 5
+    },
+    {
+      "condition": "both_j8_d2",
+      "function": "fn_gcd_sum",
+      "decompile_median_ms": 22,
+      "decompile_body_bytes": 2211,
+      "runtime_ns": 4052
+    },
+    {
+      "condition": "both_j8_d2",
+      "function": "fn_bitrev",
+      "decompile_median_ms": 21,
+      "decompile_body_bytes": 2035,
+      "runtime_ns": 18
+    },
+    {
+      "condition": "both_j8_d2",
+      "function": "fn_sbox_round",
+      "decompile_median_ms": 22,
+      "decompile_body_bytes": 2342,
+      "runtime_ns": 33
+    },
+    {
+      "condition": "both_j8_d2",
+      "function": "fn_sum_primes",
+      "decompile_median_ms": 23,
+      "decompile_body_bytes": 2168,
+      "runtime_ns": 27217
+    },
+    {
+      "condition": "both_j8_d2",
+      "function": "fn_matrix_trace",
+      "decompile_median_ms": 17,
+      "decompile_body_bytes": 2146,
+      "runtime_ns": 6
+    },
+    {
+      "condition": "both_j8_d2",
+      "function": "fn_crc_like",
+      "decompile_median_ms": 18,
+      "decompile_body_bytes": 2088,
+      "runtime_ns": 45
+    },
+    {
+      "condition": "both_j8_d2",
+      "function": "fn_state_machine",
+      "decompile_median_ms": 22,
+      "decompile_body_bytes": 2026,
+      "runtime_ns": 45
+    },
+    {
+      "condition": "both_j8_d2",
+      "function": "fn_nested_loops",
+      "decompile_median_ms": 17,
+      "decompile_body_bytes": 2013,
+      "runtime_ns": 290
+    },
+    {
+      "condition": "both_j8_d2",
+      "function": "fn_hash_probe",
+      "decompile_median_ms": 20,
+      "decompile_body_bytes": 2153,
+      "runtime_ns": 7
+    },
+    {
+      "condition": "both_j8_d2",
+      "function": "fn_saturating_ops",
+      "decompile_median_ms": 17,
+      "decompile_body_bytes": 2023,
+      "runtime_ns": 48
+    },
+    {
+      "condition": "both_j8_d2",
+      "function": "fn_poly_eval",
+      "decompile_median_ms": 18,
+      "decompile_body_bytes": 2078,
+      "runtime_ns": 5
+    },
+    {
+      "condition": "both_j16_d2",
+      "function": "fn_lcg",
+      "decompile_median_ms": 28,
+      "decompile_body_bytes": 3495,
+      "runtime_ns": 5
+    },
+    {
+      "condition": "both_j16_d2",
+      "function": "fn_even_fib_sum",
+      "decompile_median_ms": 31,
+      "decompile_body_bytes": 3641,
+      "runtime_ns": 5
+    },
+    {
+      "condition": "both_j16_d2",
+      "function": "fn_collatz_len",
+      "decompile_median_ms": 34,
+      "decompile_body_bytes": 3744,
+      "runtime_ns": 85
+    },
+    {
+      "condition": "both_j16_d2",
+      "function": "fn_popcount_mix",
+      "decompile_median_ms": 66,
+      "decompile_body_bytes": 4177,
+      "runtime_ns": 13
+    },
+    {
+      "condition": "both_j16_d2",
+      "function": "fn_branch_ladder",
+      "decompile_median_ms": 30,
+      "decompile_body_bytes": 3504,
+      "runtime_ns": 7
+    },
+    {
+      "condition": "both_j16_d2",
+      "function": "fn_gcd_sum",
+      "decompile_median_ms": 41,
+      "decompile_body_bytes": 3812,
+      "runtime_ns": 4080
+    },
+    {
+      "condition": "both_j16_d2",
+      "function": "fn_bitrev",
+      "decompile_median_ms": 35,
+      "decompile_body_bytes": 3686,
+      "runtime_ns": 18
+    },
+    {
+      "condition": "both_j16_d2",
+      "function": "fn_sbox_round",
+      "decompile_median_ms": 37,
+      "decompile_body_bytes": 3882,
+      "runtime_ns": 31
+    },
+    {
+      "condition": "both_j16_d2",
+      "function": "fn_sum_primes",
+      "decompile_median_ms": 36,
+      "decompile_body_bytes": 3768,
+      "runtime_ns": 27342
+    },
+    {
+      "condition": "both_j16_d2",
+      "function": "fn_matrix_trace",
+      "decompile_median_ms": 32,
+      "decompile_body_bytes": 3703,
+      "runtime_ns": 6
+    },
+    {
+      "condition": "both_j16_d2",
+      "function": "fn_crc_like",
+      "decompile_median_ms": 33,
+      "decompile_body_bytes": 3704,
+      "runtime_ns": 45
+    },
+    {
+      "condition": "both_j16_d2",
+      "function": "fn_state_machine",
+      "decompile_median_ms": 41,
+      "decompile_body_bytes": 3574,
+      "runtime_ns": 51
+    },
+    {
+      "condition": "both_j16_d2",
+      "function": "fn_nested_loops",
+      "decompile_median_ms": 30,
+      "decompile_body_bytes": 3577,
+      "runtime_ns": 290
+    },
+    {
+      "condition": "both_j16_d2",
+      "function": "fn_hash_probe",
+      "decompile_median_ms": 35,
+      "decompile_body_bytes": 3728,
+      "runtime_ns": 7
+    },
+    {
+      "condition": "both_j16_d2",
+      "function": "fn_saturating_ops",
+      "decompile_median_ms": 29,
+      "decompile_body_bytes": 3598,
+      "runtime_ns": 48
+    },
+    {
+      "condition": "both_j16_d2",
+      "function": "fn_poly_eval",
+      "decompile_median_ms": 42,
+      "decompile_body_bytes": 3717,
+      "runtime_ns": 5
+    },
+    {
+      "condition": "both_j32_d2",
+      "function": "fn_lcg",
+      "decompile_median_ms": 56,
+      "decompile_body_bytes": 6721,
+      "runtime_ns": 5
+    },
+    {
+      "condition": "both_j32_d2",
+      "function": "fn_even_fib_sum",
+      "decompile_median_ms": 67,
+      "decompile_body_bytes": 7146,
+      "runtime_ns": 5
+    },
+    {
+      "condition": "both_j32_d2",
+      "function": "fn_collatz_len",
+      "decompile_median_ms": 72,
+      "decompile_body_bytes": 6732,
+      "runtime_ns": 84
+    },
+    {
+      "condition": "both_j32_d2",
+      "function": "fn_popcount_mix",
+      "decompile_median_ms": 101,
+      "decompile_body_bytes": 7625,
+      "runtime_ns": 13
+    },
+    {
+      "condition": "both_j32_d2",
+      "function": "fn_branch_ladder",
+      "decompile_median_ms": 63,
+      "decompile_body_bytes": 6877,
+      "runtime_ns": 6
+    },
+    {
+      "condition": "both_j32_d2",
+      "function": "fn_gcd_sum",
+      "decompile_median_ms": 72,
+      "decompile_body_bytes": 6760,
+      "runtime_ns": 4038
+    },
+    {
+      "condition": "both_j32_d2",
+      "function": "fn_bitrev",
+      "decompile_median_ms": 74,
+      "decompile_body_bytes": 6692,
+      "runtime_ns": 19
+    },
+    {
+      "condition": "both_j32_d2",
+      "function": "fn_sbox_round",
+      "decompile_median_ms": 66,
+      "decompile_body_bytes": 7123,
+      "runtime_ns": 32
+    },
+    {
+      "condition": "both_j32_d2",
+      "function": "fn_sum_primes",
+      "decompile_median_ms": 77,
+      "decompile_body_bytes": 7287,
+      "runtime_ns": 27220
+    },
+    {
+      "condition": "both_j32_d2",
+      "function": "fn_matrix_trace",
+      "decompile_median_ms": 71,
+      "decompile_body_bytes": 7192,
+      "runtime_ns": 6
+    },
+    {
+      "condition": "both_j32_d2",
+      "function": "fn_crc_like",
+      "decompile_median_ms": 61,
+      "decompile_body_bytes": 6696,
+      "runtime_ns": 45
+    },
+    {
+      "condition": "both_j32_d2",
+      "function": "fn_state_machine",
+      "decompile_median_ms": 87,
+      "decompile_body_bytes": 6409,
+      "runtime_ns": 45
+    },
+    {
+      "condition": "both_j32_d2",
+      "function": "fn_nested_loops",
+      "decompile_median_ms": 57,
+      "decompile_body_bytes": 6489,
+      "runtime_ns": 291
+    },
+    {
+      "condition": "both_j32_d2",
+      "function": "fn_hash_probe",
+      "decompile_median_ms": 73,
+      "decompile_body_bytes": 7259,
+      "runtime_ns": 7
+    },
+    {
+      "condition": "both_j32_d2",
+      "function": "fn_saturating_ops",
+      "decompile_median_ms": 60,
+      "decompile_body_bytes": 6505,
+      "runtime_ns": 48
+    },
+    {
+      "condition": "both_j32_d2",
+      "function": "fn_poly_eval",
+      "decompile_median_ms": 66,
+      "decompile_body_bytes": 7208,
+      "runtime_ns": 6
+    },
+    {
+      "condition": "both_j128_d2",
+      "function": "fn_lcg",
+      "decompile_median_ms": 331,
+      "decompile_body_bytes": 25124,
+      "runtime_ns": 8
+    },
+    {
+      "condition": "both_j128_d2",
+      "function": "fn_even_fib_sum",
+      "decompile_median_ms": 420,
+      "decompile_body_bytes": 26466,
+      "runtime_ns": 6
+    },
+    {
+      "condition": "both_j128_d2",
+      "function": "fn_collatz_len",
+      "decompile_median_ms": 425,
+      "decompile_body_bytes": 27355,
+      "runtime_ns": 85
+    },
+    {
+      "condition": "both_j128_d2",
+      "function": "fn_popcount_mix",
+      "decompile_median_ms": 475,
+      "decompile_body_bytes": 26682,
+      "runtime_ns": 14
+    },
+    {
+      "condition": "both_j128_d2",
+      "function": "fn_branch_ladder",
+      "decompile_median_ms": 341,
+      "decompile_body_bytes": 25146,
+      "runtime_ns": 6
+    },
+    {
+      "condition": "both_j128_d2",
+      "function": "fn_gcd_sum",
+      "decompile_median_ms": 453,
+      "decompile_body_bytes": 27330,
+      "runtime_ns": 4066
+    },
+    {
+      "condition": "both_j128_d2",
+      "function": "fn_bitrev",
+      "decompile_median_ms": 420,
+      "decompile_body_bytes": 27394,
+      "runtime_ns": 19
+    },
+    {
+      "condition": "both_j128_d2",
+      "function": "fn_sbox_round",
+      "decompile_median_ms": 344,
+      "decompile_body_bytes": 25372,
+      "runtime_ns": 32
+    },
+    {
+      "condition": "both_j128_d2",
+      "function": "fn_sum_primes",
+      "decompile_median_ms": 441,
+      "decompile_body_bytes": 26541,
+      "runtime_ns": 27139
+    },
+    {
+      "condition": "both_j128_d2",
+      "function": "fn_matrix_trace",
+      "decompile_median_ms": 431,
+      "decompile_body_bytes": 26105,
+      "runtime_ns": 7
+    },
+    {
+      "condition": "both_j128_d2",
+      "function": "fn_crc_like",
+      "decompile_median_ms": 340,
+      "decompile_body_bytes": 25364,
+      "runtime_ns": 47
+    },
+    {
+      "condition": "both_j128_d2",
+      "function": "fn_state_machine",
+      "decompile_median_ms": 542,
+      "decompile_body_bytes": 25666,
+      "runtime_ns": 45
+    },
+    {
+      "condition": "both_j128_d2",
+      "function": "fn_nested_loops",
+      "decompile_median_ms": 342,
+      "decompile_body_bytes": 25577,
+      "runtime_ns": 292
+    },
+    {
+      "condition": "both_j128_d2",
+      "function": "fn_hash_probe",
+      "decompile_median_ms": 429,
+      "decompile_body_bytes": 26341,
+      "runtime_ns": 8
+    },
+    {
+      "condition": "both_j128_d2",
+      "function": "fn_saturating_ops",
+      "decompile_median_ms": 369,
+      "decompile_body_bytes": 25643,
+      "runtime_ns": 49
+    },
+    {
+      "condition": "both_j128_d2",
+      "function": "fn_poly_eval",
+      "decompile_median_ms": 424,
+      "decompile_body_bytes": 26374,
+      "runtime_ns": 6
+    },
+    {
+      "condition": "both_j256_d2",
+      "function": "fn_lcg",
+      "decompile_median_ms": 1074,
+      "decompile_body_bytes": 51138,
+      "runtime_ns": 6
+    },
+    {
+      "condition": "both_j256_d2",
+      "function": "fn_even_fib_sum",
+      "decompile_median_ms": 1351,
+      "decompile_body_bytes": 54660,
+      "runtime_ns": 6
+    },
+    {
+      "condition": "both_j256_d2",
+      "function": "fn_collatz_len",
+      "decompile_median_ms": 1258,
+      "decompile_body_bytes": 52207,
+      "runtime_ns": 86
+    },
+    {
+      "condition": "both_j256_d2",
+      "function": "fn_popcount_mix",
+      "decompile_median_ms": 1416,
+      "decompile_body_bytes": 53162,
+      "runtime_ns": 14
+    },
+    {
+      "condition": "both_j256_d2",
+      "function": "fn_branch_ladder",
+      "decompile_median_ms": 1111,
+      "decompile_body_bytes": 52364,
+      "runtime_ns": 8
+    },
+    {
+      "condition": "both_j256_d2",
+      "function": "fn_gcd_sum",
+      "decompile_median_ms": 1340,
+      "decompile_body_bytes": 52316,
+      "runtime_ns": 4070
+    },
+    {
+      "condition": "both_j256_d2",
+      "function": "fn_bitrev",
+      "decompile_median_ms": 1289,
+      "decompile_body_bytes": 52342,
+      "runtime_ns": 19
+    },
+    {
+      "condition": "both_j256_d2",
+      "function": "fn_sbox_round",
+      "decompile_median_ms": 1093,
+      "decompile_body_bytes": 51393,
+      "runtime_ns": 31
+    },
+    {
+      "condition": "both_j256_d2",
+      "function": "fn_sum_primes",
+      "decompile_median_ms": 1350,
+      "decompile_body_bytes": 54633,
+      "runtime_ns": 27379
+    },
+    {
+      "condition": "both_j256_d2",
+      "function": "fn_matrix_trace",
+      "decompile_median_ms": 1155,
+      "decompile_body_bytes": 54140,
+      "runtime_ns": 9
+    },
+    {
+      "condition": "both_j256_d2",
+      "function": "fn_crc_like",
+      "decompile_median_ms": 1104,
+      "decompile_body_bytes": 51401,
+      "runtime_ns": 48
+    },
+    {
+      "condition": "both_j256_d2",
+      "function": "fn_state_machine",
+      "decompile_median_ms": 1791,
+      "decompile_body_bytes": 50053,
+      "runtime_ns": 78
+    },
+    {
+      "condition": "both_j256_d2",
+      "function": "fn_nested_loops",
+      "decompile_median_ms": 1074,
+      "decompile_body_bytes": 49911,
+      "runtime_ns": 290
+    },
+    {
+      "condition": "both_j256_d2",
+      "function": "fn_hash_probe",
+      "decompile_median_ms": 1192,
+      "decompile_body_bytes": 54263,
+      "runtime_ns": 8
+    },
+    {
+      "condition": "both_j256_d2",
+      "function": "fn_saturating_ops",
+      "decompile_median_ms": 1200,
+      "decompile_body_bytes": 49928,
+      "runtime_ns": 50
+    },
+    {
+      "condition": "both_j256_d2",
+      "function": "fn_poly_eval",
+      "decompile_median_ms": 1324,
+      "decompile_body_bytes": 54570,
+      "runtime_ns": 6
+    },
+    {
+      "condition": "both_j256_d4",
+      "function": "fn_lcg",
+      "decompile_median_ms": 3281,
+      "decompile_body_bytes": 73619,
+      "runtime_ns": 7
+    },
+    {
+      "condition": "both_j256_d4",
+      "function": "fn_even_fib_sum",
+      "decompile_median_ms": 2975,
+      "decompile_body_bytes": 82339,
+      "runtime_ns": 8
+    },
+    {
+      "condition": "both_j256_d4",
+      "function": "fn_collatz_len",
+      "decompile_median_ms": 2503,
+      "decompile_body_bytes": 83179,
+      "runtime_ns": 86
+    },
+    {
+      "condition": "both_j256_d4",
+      "function": "fn_popcount_mix",
+      "decompile_median_ms": 2695,
+      "decompile_body_bytes": 80342,
+      "runtime_ns": 16
+    },
+    {
+      "condition": "both_j256_d4",
+      "function": "fn_branch_ladder",
+      "decompile_median_ms": 2408,
+      "decompile_body_bytes": 76417,
+      "runtime_ns": 8
+    },
+    {
+      "condition": "both_j256_d4",
+      "function": "fn_gcd_sum",
+      "decompile_median_ms": 2582,
+      "decompile_body_bytes": 83275,
+      "runtime_ns": 4154
+    },
+    {
+      "condition": "both_j256_d4",
+      "function": "fn_bitrev",
+      "decompile_median_ms": 2488,
+      "decompile_body_bytes": 83218,
+      "runtime_ns": 21
+    },
+    {
+      "condition": "both_j256_d4",
+      "function": "fn_sbox_round",
+      "decompile_median_ms": 3700,
+      "decompile_body_bytes": 73826,
+      "runtime_ns": 33
+    },
+    {
+      "condition": "both_j256_d4",
+      "function": "fn_sum_primes",
+      "decompile_median_ms": 3995,
+      "decompile_body_bytes": 82426,
+      "runtime_ns": 27210
+    },
+    {
+      "condition": "both_j256_d4",
+      "function": "fn_matrix_trace",
+      "decompile_median_ms": 2624,
+      "decompile_body_bytes": 79842,
+      "runtime_ns": 8
+    },
+    {
+      "condition": "both_j256_d4",
+      "function": "fn_crc_like",
+      "decompile_median_ms": 3257,
+      "decompile_body_bytes": 73810,
+      "runtime_ns": 49
+    },
+    {
+      "condition": "both_j256_d4",
+      "function": "fn_state_machine",
+      "decompile_median_ms": 4907,
+      "decompile_body_bytes": 77357,
+      "runtime_ns": 49
+    },
+    {
+      "condition": "both_j256_d4",
+      "function": "fn_nested_loops",
+      "decompile_median_ms": 2351,
+      "decompile_body_bytes": 77265,
+      "runtime_ns": 292
+    },
+    {
+      "condition": "both_j256_d4",
+      "function": "fn_hash_probe",
+      "decompile_median_ms": 2580,
+      "decompile_body_bytes": 79923,
+      "runtime_ns": 10
+    },
+    {
+      "condition": "both_j256_d4",
+      "function": "fn_saturating_ops",
+      "decompile_median_ms": 2569,
+      "decompile_body_bytes": 77264,
+      "runtime_ns": 51
+    },
+    {
+      "condition": "both_j256_d4",
+      "function": "fn_poly_eval",
+      "decompile_median_ms": 3015,
+      "decompile_body_bytes": 82316,
+      "runtime_ns": 8
+    },
+    {
+      "condition": "m1_j8",
+      "function": "fn_lcg",
+      "decompile_median_ms": 0,
+      "decompile_body_bytes": 34,
+      "runtime_ns": 3
+    },
+    {
+      "condition": "m1_j8",
+      "function": "fn_even_fib_sum",
+      "decompile_median_ms": 0,
+      "decompile_body_bytes": 29,
+      "runtime_ns": 1
+    },
+    {
+      "condition": "m1_j8",
+      "function": "fn_collatz_len",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 107,
+      "runtime_ns": 80
+    },
+    {
+      "condition": "m1_j8",
+      "function": "fn_popcount_mix",
+      "decompile_median_ms": 19,
+      "decompile_body_bytes": 630,
+      "runtime_ns": 9
+    },
+    {
+      "condition": "m1_j8",
+      "function": "fn_branch_ladder",
+      "decompile_median_ms": 4,
+      "decompile_body_bytes": 165,
+      "runtime_ns": 3
+    },
+    {
+      "condition": "m1_j8",
+      "function": "fn_gcd_sum",
+      "decompile_median_ms": 5,
+      "decompile_body_bytes": 205,
+      "runtime_ns": 4110
+    },
+    {
+      "condition": "m1_j8",
+      "function": "fn_bitrev",
+      "decompile_median_ms": 4,
+      "decompile_body_bytes": 70,
+      "runtime_ns": 15
+    },
+    {
+      "condition": "m1_j8",
+      "function": "fn_sbox_round",
+      "decompile_median_ms": 8,
+      "decompile_body_bytes": 400,
+      "runtime_ns": 29
+    },
+    {
+      "condition": "m1_j8",
+      "function": "fn_sum_primes",
+      "decompile_median_ms": 6,
+      "decompile_body_bytes": 168,
+      "runtime_ns": 27609
+    },
+    {
+      "condition": "m1_j8",
+      "function": "fn_matrix_trace",
+      "decompile_median_ms": 2,
+      "decompile_body_bytes": 131,
+      "runtime_ns": 2
+    },
+    {
+      "condition": "m1_j8",
+      "function": "fn_crc_like",
+      "decompile_median_ms": 4,
+      "decompile_body_bytes": 208,
+      "runtime_ns": 39
+    },
+    {
+      "condition": "m1_j8",
+      "function": "fn_state_machine",
+      "decompile_median_ms": 1,
+      "decompile_body_bytes": 106,
+      "runtime_ns": 61
+    },
+    {
+      "condition": "m1_j8",
+      "function": "fn_nested_loops",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 114,
+      "runtime_ns": 294
+    },
+    {
+      "condition": "m1_j8",
+      "function": "fn_hash_probe",
+      "decompile_median_ms": 4,
+      "decompile_body_bytes": 167,
+      "runtime_ns": 4
+    },
+    {
+      "condition": "m1_j8",
+      "function": "fn_saturating_ops",
+      "decompile_median_ms": 2,
+      "decompile_body_bytes": 94,
+      "runtime_ns": 43
+    },
+    {
+      "condition": "m1_j8",
+      "function": "fn_poly_eval",
+      "decompile_median_ms": 1,
+      "decompile_body_bytes": 87,
+      "runtime_ns": 2
+    },
+    {
+      "condition": "m1_j16",
+      "function": "fn_lcg",
+      "decompile_median_ms": 1,
+      "decompile_body_bytes": 34,
+      "runtime_ns": 3
+    },
+    {
+      "condition": "m1_j16",
+      "function": "fn_even_fib_sum",
+      "decompile_median_ms": 0,
+      "decompile_body_bytes": 29,
+      "runtime_ns": 1
+    },
+    {
+      "condition": "m1_j16",
+      "function": "fn_collatz_len",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 107,
+      "runtime_ns": 83
+    },
+    {
+      "condition": "m1_j16",
+      "function": "fn_popcount_mix",
+      "decompile_median_ms": 20,
+      "decompile_body_bytes": 630,
+      "runtime_ns": 10
+    },
+    {
+      "condition": "m1_j16",
+      "function": "fn_branch_ladder",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 165,
+      "runtime_ns": 3
+    },
+    {
+      "condition": "m1_j16",
+      "function": "fn_gcd_sum",
+      "decompile_median_ms": 5,
+      "decompile_body_bytes": 205,
+      "runtime_ns": 4105
+    },
+    {
+      "condition": "m1_j16",
+      "function": "fn_bitrev",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 70,
+      "runtime_ns": 15
+    },
+    {
+      "condition": "m1_j16",
+      "function": "fn_sbox_round",
+      "decompile_median_ms": 8,
+      "decompile_body_bytes": 400,
+      "runtime_ns": 30
+    },
+    {
+      "condition": "m1_j16",
+      "function": "fn_sum_primes",
+      "decompile_median_ms": 5,
+      "decompile_body_bytes": 168,
+      "runtime_ns": 27742
+    },
+    {
+      "condition": "m1_j16",
+      "function": "fn_matrix_trace",
+      "decompile_median_ms": 2,
+      "decompile_body_bytes": 131,
+      "runtime_ns": 2
+    },
+    {
+      "condition": "m1_j16",
+      "function": "fn_crc_like",
+      "decompile_median_ms": 4,
+      "decompile_body_bytes": 208,
+      "runtime_ns": 39
+    },
+    {
+      "condition": "m1_j16",
+      "function": "fn_state_machine",
+      "decompile_median_ms": 1,
+      "decompile_body_bytes": 106,
+      "runtime_ns": 61
+    },
+    {
+      "condition": "m1_j16",
+      "function": "fn_nested_loops",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 114,
+      "runtime_ns": 290
+    },
+    {
+      "condition": "m1_j16",
+      "function": "fn_hash_probe",
+      "decompile_median_ms": 4,
+      "decompile_body_bytes": 167,
+      "runtime_ns": 4
+    },
+    {
+      "condition": "m1_j16",
+      "function": "fn_saturating_ops",
+      "decompile_median_ms": 2,
+      "decompile_body_bytes": 94,
+      "runtime_ns": 44
+    },
+    {
+      "condition": "m1_j16",
+      "function": "fn_poly_eval",
+      "decompile_median_ms": 1,
+      "decompile_body_bytes": 87,
+      "runtime_ns": 2
+    },
+    {
+      "condition": "m1_j32",
+      "function": "fn_lcg",
+      "decompile_median_ms": 1,
+      "decompile_body_bytes": 34,
+      "runtime_ns": 2
+    },
+    {
+      "condition": "m1_j32",
+      "function": "fn_even_fib_sum",
+      "decompile_median_ms": 0,
+      "decompile_body_bytes": 29,
+      "runtime_ns": 1
+    },
+    {
+      "condition": "m1_j32",
+      "function": "fn_collatz_len",
+      "decompile_median_ms": 2,
+      "decompile_body_bytes": 107,
+      "runtime_ns": 81
+    },
+    {
+      "condition": "m1_j32",
+      "function": "fn_popcount_mix",
+      "decompile_median_ms": 21,
+      "decompile_body_bytes": 630,
+      "runtime_ns": 9
+    },
+    {
+      "condition": "m1_j32",
+      "function": "fn_branch_ladder",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 165,
+      "runtime_ns": 3
+    },
+    {
+      "condition": "m1_j32",
+      "function": "fn_gcd_sum",
+      "decompile_median_ms": 6,
+      "decompile_body_bytes": 205,
+      "runtime_ns": 4192
+    },
+    {
+      "condition": "m1_j32",
+      "function": "fn_bitrev",
+      "decompile_median_ms": 2,
+      "decompile_body_bytes": 70,
+      "runtime_ns": 15
+    },
+    {
+      "condition": "m1_j32",
+      "function": "fn_sbox_round",
+      "decompile_median_ms": 8,
+      "decompile_body_bytes": 400,
+      "runtime_ns": 32
+    },
+    {
+      "condition": "m1_j32",
+      "function": "fn_sum_primes",
+      "decompile_median_ms": 5,
+      "decompile_body_bytes": 168,
+      "runtime_ns": 27595
+    },
+    {
+      "condition": "m1_j32",
+      "function": "fn_matrix_trace",
+      "decompile_median_ms": 2,
+      "decompile_body_bytes": 131,
+      "runtime_ns": 2
+    },
+    {
+      "condition": "m1_j32",
+      "function": "fn_crc_like",
+      "decompile_median_ms": 4,
+      "decompile_body_bytes": 208,
+      "runtime_ns": 39
+    },
+    {
+      "condition": "m1_j32",
+      "function": "fn_state_machine",
+      "decompile_median_ms": 1,
+      "decompile_body_bytes": 106,
+      "runtime_ns": 62
+    },
+    {
+      "condition": "m1_j32",
+      "function": "fn_nested_loops",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 114,
+      "runtime_ns": 308
+    },
+    {
+      "condition": "m1_j32",
+      "function": "fn_hash_probe",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 167,
+      "runtime_ns": 4
+    },
+    {
+      "condition": "m1_j32",
+      "function": "fn_saturating_ops",
+      "decompile_median_ms": 2,
+      "decompile_body_bytes": 94,
+      "runtime_ns": 45
+    },
+    {
+      "condition": "m1_j32",
+      "function": "fn_poly_eval",
+      "decompile_median_ms": 1,
+      "decompile_body_bytes": 87,
+      "runtime_ns": 2
+    },
+    {
+      "condition": "m1_j128",
+      "function": "fn_lcg",
+      "decompile_median_ms": 1,
+      "decompile_body_bytes": 34,
+      "runtime_ns": 2
+    },
+    {
+      "condition": "m1_j128",
+      "function": "fn_even_fib_sum",
+      "decompile_median_ms": 1,
+      "decompile_body_bytes": 29,
+      "runtime_ns": 1
+    },
+    {
+      "condition": "m1_j128",
+      "function": "fn_collatz_len",
+      "decompile_median_ms": 5,
+      "decompile_body_bytes": 107,
+      "runtime_ns": 80
+    },
+    {
+      "condition": "m1_j128",
+      "function": "fn_popcount_mix",
+      "decompile_median_ms": 23,
+      "decompile_body_bytes": 630,
+      "runtime_ns": 9
+    },
+    {
+      "condition": "m1_j128",
+      "function": "fn_branch_ladder",
+      "decompile_median_ms": 4,
+      "decompile_body_bytes": 165,
+      "runtime_ns": 3
+    },
+    {
+      "condition": "m1_j128",
+      "function": "fn_gcd_sum",
+      "decompile_median_ms": 6,
+      "decompile_body_bytes": 205,
+      "runtime_ns": 4085
+    },
+    {
+      "condition": "m1_j128",
+      "function": "fn_bitrev",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 70,
+      "runtime_ns": 15
+    },
+    {
+      "condition": "m1_j128",
+      "function": "fn_sbox_round",
+      "decompile_median_ms": 9,
+      "decompile_body_bytes": 400,
+      "runtime_ns": 30
+    },
+    {
+      "condition": "m1_j128",
+      "function": "fn_sum_primes",
+      "decompile_median_ms": 6,
+      "decompile_body_bytes": 168,
+      "runtime_ns": 27392
+    },
+    {
+      "condition": "m1_j128",
+      "function": "fn_matrix_trace",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 131,
+      "runtime_ns": 2
+    },
+    {
+      "condition": "m1_j128",
+      "function": "fn_crc_like",
+      "decompile_median_ms": 5,
+      "decompile_body_bytes": 208,
+      "runtime_ns": 38
+    },
+    {
+      "condition": "m1_j128",
+      "function": "fn_state_machine",
+      "decompile_median_ms": 1,
+      "decompile_body_bytes": 106,
+      "runtime_ns": 60
+    },
+    {
+      "condition": "m1_j128",
+      "function": "fn_nested_loops",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 114,
+      "runtime_ns": 287
+    },
+    {
+      "condition": "m1_j128",
+      "function": "fn_hash_probe",
+      "decompile_median_ms": 4,
+      "decompile_body_bytes": 167,
+      "runtime_ns": 4
+    },
+    {
+      "condition": "m1_j128",
+      "function": "fn_saturating_ops",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 94,
+      "runtime_ns": 43
+    },
+    {
+      "condition": "m1_j128",
+      "function": "fn_poly_eval",
+      "decompile_median_ms": 1,
+      "decompile_body_bytes": 87,
+      "runtime_ns": 2
+    },
+    {
+      "condition": "m1_j256",
+      "function": "fn_lcg",
+      "decompile_median_ms": 1,
+      "decompile_body_bytes": 34,
+      "runtime_ns": 2
+    },
+    {
+      "condition": "m1_j256",
+      "function": "fn_even_fib_sum",
+      "decompile_median_ms": 1,
+      "decompile_body_bytes": 29,
+      "runtime_ns": 1
+    },
+    {
+      "condition": "m1_j256",
+      "function": "fn_collatz_len",
+      "decompile_median_ms": 2,
+      "decompile_body_bytes": 107,
+      "runtime_ns": 80
+    },
+    {
+      "condition": "m1_j256",
+      "function": "fn_popcount_mix",
+      "decompile_median_ms": 21,
+      "decompile_body_bytes": 630,
+      "runtime_ns": 9
+    },
+    {
+      "condition": "m1_j256",
+      "function": "fn_branch_ladder",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 165,
+      "runtime_ns": 3
+    },
+    {
+      "condition": "m1_j256",
+      "function": "fn_gcd_sum",
+      "decompile_median_ms": 6,
+      "decompile_body_bytes": 205,
+      "runtime_ns": 4209
+    },
+    {
+      "condition": "m1_j256",
+      "function": "fn_bitrev",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 70,
+      "runtime_ns": 15
+    },
+    {
+      "condition": "m1_j256",
+      "function": "fn_sbox_round",
+      "decompile_median_ms": 9,
+      "decompile_body_bytes": 400,
+      "runtime_ns": 30
+    },
+    {
+      "condition": "m1_j256",
+      "function": "fn_sum_primes",
+      "decompile_median_ms": 5,
+      "decompile_body_bytes": 168,
+      "runtime_ns": 27556
+    },
+    {
+      "condition": "m1_j256",
+      "function": "fn_matrix_trace",
+      "decompile_median_ms": 2,
+      "decompile_body_bytes": 131,
+      "runtime_ns": 2
+    },
+    {
+      "condition": "m1_j256",
+      "function": "fn_crc_like",
+      "decompile_median_ms": 4,
+      "decompile_body_bytes": 208,
+      "runtime_ns": 39
+    },
+    {
+      "condition": "m1_j256",
+      "function": "fn_state_machine",
+      "decompile_median_ms": 1,
+      "decompile_body_bytes": 106,
+      "runtime_ns": 62
+    },
+    {
+      "condition": "m1_j256",
+      "function": "fn_nested_loops",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 114,
+      "runtime_ns": 294
+    },
+    {
+      "condition": "m1_j256",
+      "function": "fn_hash_probe",
+      "decompile_median_ms": 4,
+      "decompile_body_bytes": 167,
+      "runtime_ns": 4
+    },
+    {
+      "condition": "m1_j256",
+      "function": "fn_saturating_ops",
+      "decompile_median_ms": 3,
+      "decompile_body_bytes": 94,
+      "runtime_ns": 45
+    },
+    {
+      "condition": "m1_j256",
+      "function": "fn_poly_eval",
+      "decompile_median_ms": 1,
+      "decompile_body_bytes": 87,
+      "runtime_ns": 2
+    }
+  ],
+  "summary": {
+    "plain": {
+      "attr": "#[inline(never)]",
+      "size_bytes": 455368,
+      "checksum_ok": true,
+      "decompile_total_ms": 61,
+      "decompile_ratio_median": 1.0,
+      "decompile_ratio_max": 1.0,
+      "runtime_ratio_median": 1.0
+    },
+    "m1_j64": {
+      "attr": "#[llnv_obfuscate(flatten=1, harden=0, jumps=64)]",
+      "size_bytes": 455376,
+      "checksum_ok": true,
+      "decompile_total_ms": 66,
+      "decompile_ratio_median": 1.0,
+      "decompile_ratio_max": 1.5,
+      "runtime_ratio_median": 1.0
+    },
+    "m2_d2": {
+      "attr": "#[llnv_obfuscate(flatten=0, harden=1, mba_depth=2)]",
+      "size_bytes": 460672,
+      "checksum_ok": true,
+      "decompile_total_ms": 119,
+      "decompile_ratio_median": 2.0,
+      "decompile_ratio_max": 6.0,
+      "runtime_ratio_median": 1.085
+    },
+    "both_j64_d2": {
+      "attr": "#[llnv_obfuscate(flatten=1, harden=1, jumps=64, mba_depth=2)]",
+      "size_bytes": 664288,
+      "checksum_ok": true,
+      "decompile_total_ms": 2552,
+      "decompile_ratio_median": 52.333,
+      "decompile_ratio_max": 208.0,
+      "runtime_ratio_median": 1.19
+    },
+    "both_j8_d2": {
+      "attr": "#[llnv_obfuscate(flatten=1, harden=1, jumps=8, mba_depth=2)]",
+      "size_bytes": 487800,
+      "checksum_ok": true,
+      "decompile_total_ms": 328,
+      "decompile_ratio_median": 6.333,
+      "decompile_ratio_max": 22.0,
+      "runtime_ratio_median": 1.177
+    },
+    "both_j16_d2": {
+      "attr": "#[llnv_obfuscate(flatten=1, harden=1, jumps=16, mba_depth=2)]",
+      "size_bytes": 513088,
+      "checksum_ok": true,
+      "decompile_total_ms": 580,
+      "decompile_ratio_median": 10.833,
+      "decompile_ratio_max": 42.0,
+      "runtime_ratio_median": 1.177
+    },
+    "both_j32_d2": {
+      "attr": "#[llnv_obfuscate(flatten=1, harden=1, jumps=32, mba_depth=2)]",
+      "size_bytes": 564416,
+      "checksum_ok": true,
+      "decompile_total_ms": 1123,
+      "decompile_ratio_median": 22.667,
+      "decompile_ratio_max": 87.0,
+      "runtime_ratio_median": 1.21
+    },
+    "both_j128_d2": {
+      "attr": "#[llnv_obfuscate(flatten=1, harden=1, jumps=128, mba_depth=2)]",
+      "size_bytes": 872224,
+      "checksum_ok": true,
+      "decompile_total_ms": 6527,
+      "decompile_ratio_median": 128.5,
+      "decompile_ratio_max": 542.0,
+      "runtime_ratio_median": 1.236
+    },
+    "both_j256_d2": {
+      "attr": "#[llnv_obfuscate(flatten=1, harden=1, jumps=256, mba_depth=2)]",
+      "size_bytes": 1292160,
+      "checksum_ok": true,
+      "decompile_total_ms": 20122,
+      "decompile_ratio_median": 383.833,
+      "decompile_ratio_max": 1791.0,
+      "runtime_ratio_median": 1.273
+    },
+    "both_j256_d4": {
+      "attr": "#[llnv_obfuscate(flatten=1, harden=1, jumps=256, mba_depth=4)]",
+      "size_bytes": 1720384,
+      "checksum_ok": true,
+      "decompile_total_ms": 47930,
+      "decompile_ratio_median": 837.125,
+      "decompile_ratio_max": 4907.0,
+      "runtime_ratio_median": 1.328
+    },
+    "m1_j8": {
+      "attr": "#[llnv_obfuscate(flatten=1, harden=0, jumps=8)]",
+      "size_bytes": 455376,
+      "checksum_ok": true,
+      "decompile_total_ms": 66,
+      "decompile_ratio_median": 1.0,
+      "decompile_ratio_max": 2.0,
+      "runtime_ratio_median": 1.0
+    },
+    "m1_j16": {
+      "attr": "#[llnv_obfuscate(flatten=1, harden=0, jumps=16)]",
+      "size_bytes": 455376,
+      "checksum_ok": true,
+      "decompile_total_ms": 65,
+      "decompile_ratio_median": 1.0,
+      "decompile_ratio_max": 1.5,
+      "runtime_ratio_median": 1.0
+    },
+    "m1_j32": {
+      "attr": "#[llnv_obfuscate(flatten=1, harden=0, jumps=32)]",
+      "size_bytes": 455376,
+      "checksum_ok": true,
+      "decompile_total_ms": 64,
+      "decompile_ratio_median": 1.0,
+      "decompile_ratio_max": 1.2,
+      "runtime_ratio_median": 1.0
+    },
+    "m1_j128": {
+      "attr": "#[llnv_obfuscate(flatten=1, harden=0, jumps=128)]",
+      "size_bytes": 455376,
+      "checksum_ok": true,
+      "decompile_total_ms": 78,
+      "decompile_ratio_median": 1.225,
+      "decompile_ratio_max": 2.5,
+      "runtime_ratio_median": 1.0
+    },
+    "m1_j256": {
+      "attr": "#[llnv_obfuscate(flatten=1, harden=0, jumps=256)]",
+      "size_bytes": 455376,
+      "checksum_ok": true,
+      "decompile_total_ms": 69,
+      "decompile_ratio_median": 1.0,
+      "decompile_ratio_max": 1.5,
+      "runtime_ratio_median": 1.0
+    }
+  }
+}

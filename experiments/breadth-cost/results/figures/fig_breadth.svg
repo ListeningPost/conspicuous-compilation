@@ -1,0 +1,35 @@
+<svg viewBox="0 0 460 300" xmlns="http://www.w3.org/2000/svg" font-family="Liberation Sans,Arial,sans-serif">
+<text x="249.0" y="15" font-size="11" font-weight="700" fill="#1c1f24" text-anchor="middle">Attack time grows linearly with the number of obfuscated functions</text>
+<line x1="54" y1="254.0" x2="444" y2="254.0" stroke="#c9ccd2" stroke-width="0.5"/>
+<text x="48" y="257.0" font-size="8" fill="#6b7480" text-anchor="end">0s</text>
+<line x1="54" y1="190.6" x2="444" y2="190.6" stroke="#c9ccd2" stroke-width="0.5"/>
+<text x="48" y="193.6" font-size="8" fill="#6b7480" text-anchor="end">3s</text>
+<line x1="54" y1="127.2" x2="444" y2="127.2" stroke="#c9ccd2" stroke-width="0.5"/>
+<text x="48" y="130.2" font-size="8" fill="#6b7480" text-anchor="end">6s</text>
+<line x1="54" y1="63.9" x2="444" y2="63.9" stroke="#c9ccd2" stroke-width="0.5"/>
+<text x="48" y="66.9" font-size="8" fill="#6b7480" text-anchor="end">9s</text>
+<text x="60.1" y="268" font-size="8" fill="#6b7480" text-anchor="middle">1</text>
+<text x="66.2" y="268" font-size="8" fill="#6b7480" text-anchor="middle">2</text>
+<text x="78.4" y="268" font-size="8" fill="#6b7480" text-anchor="middle">4</text>
+<text x="102.8" y="268" font-size="8" fill="#6b7480" text-anchor="middle">8</text>
+<text x="151.5" y="268" font-size="8" fill="#6b7480" text-anchor="middle">16</text>
+<text x="249.0" y="268" font-size="8" fill="#6b7480" text-anchor="middle">32</text>
+<text x="346.5" y="268" font-size="8" fill="#6b7480" text-anchor="middle">48</text>
+<text x="444.0" y="268" font-size="8" fill="#6b7480" text-anchor="middle">64</text>
+<text x="249.0" y="294" font-size="8.5" fill="#1c1f24" text-anchor="middle">number of obfuscated functions (N), each at jumps=64</text>
+<text x="14" y="141.0" font-size="8.5" fill="#1c1f24" text-anchor="middle" transform="rotate(-90 14 141.0)">decompile wall-clock</text>
+<line x1="54" y1="28" x2="54" y2="254" stroke="#1c1f24" stroke-width="1"/>
+<line x1="54" y1="254" x2="444" y2="254" stroke="#1c1f24" stroke-width="1"/>
+<polyline points="60.1,251.4 66.2,248.1 78.4,241.4 102.8,229.6 151.5,207.1 249.0,159.7 346.5,108.4 444.0,57.5" fill="none" stroke="#0E6B4F" stroke-width="2.2"/>
+<circle cx="60.1" cy="251.4" r="3" fill="#0E6B4F"/>
+<circle cx="66.2" cy="248.1" r="3" fill="#0E6B4F"/>
+<circle cx="78.4" cy="241.4" r="3" fill="#0E6B4F"/>
+<circle cx="102.8" cy="229.6" r="3" fill="#0E6B4F"/>
+<circle cx="151.5" cy="207.1" r="3" fill="#0E6B4F"/>
+<circle cx="249.0" cy="159.7" r="3" fill="#0E6B4F"/>
+<circle cx="346.5" cy="108.4" r="3" fill="#0E6B4F"/>
+<circle cx="444.0" cy="57.5" r="3" fill="#0E6B4F"/>
+<text x="444.0" y="50.5" font-size="9" fill="#0E6B4F" text-anchor="end" font-weight="700">obfuscated 9.3s</text>
+<polyline points="60.1,253.9 66.2,253.9 78.4,253.7 102.8,253.4 151.5,253.3 249.0,252.3 346.5,251.4 444.0,249.1" fill="none" stroke="#5b6671" stroke-width="1.6" stroke-dasharray="4 2"/>
+<text x="444.0" y="263.1" font-size="8" fill="#5b6671" text-anchor="end">plain 0.23s</text>
+</svg>

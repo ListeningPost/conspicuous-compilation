@@ -1,0 +1,88 @@
+<svg viewBox="0 0 564 300" xmlns="http://www.w3.org/2000/svg" font-family="Liberation Sans,Arial,sans-serif">
+<text x="250.0" y="16" font-size="11" font-weight="700" fill="#1c1f24" text-anchor="middle">All methods and combinations: runtime vs level</text>
+<line x1="56" y1="254.0" x2="444" y2="254.0" stroke="#c9ccd2" stroke-width="0.5"/>
+<text x="50" y="257.0" font-size="8" fill="#6b7480" text-anchor="end">-6</text>
+<line x1="56" y1="198.0" x2="444" y2="198.0" stroke="#c9ccd2" stroke-width="0.5"/>
+<text x="50" y="201.0" font-size="8" fill="#6b7480" text-anchor="end">7</text>
+<line x1="56" y1="142.0" x2="444" y2="142.0" stroke="#c9ccd2" stroke-width="0.5"/>
+<text x="50" y="145.0" font-size="8" fill="#6b7480" text-anchor="end">20</text>
+<line x1="56" y1="86.0" x2="444" y2="86.0" stroke="#c9ccd2" stroke-width="0.5"/>
+<text x="50" y="89.0" font-size="8" fill="#6b7480" text-anchor="end">33</text>
+<line x1="56" y1="30.0" x2="444" y2="30.0" stroke="#c9ccd2" stroke-width="0.5"/>
+<text x="50" y="33.0" font-size="8" fill="#6b7480" text-anchor="end">47</text>
+<text x="56.0" y="268" font-size="8" fill="#6b7480" text-anchor="middle">1</text>
+<text x="153.0" y="268" font-size="8" fill="#6b7480" text-anchor="middle">2</text>
+<text x="250.0" y="268" font-size="8" fill="#6b7480" text-anchor="middle">3</text>
+<text x="347.0" y="268" font-size="8" fill="#6b7480" text-anchor="middle">4</text>
+<text x="444.0" y="268" font-size="8" fill="#6b7480" text-anchor="middle">5</text>
+<text x="250.0" y="294" font-size="8.5" fill="#1c1f24" text-anchor="middle">ordinal level (1&#8211;5), not a complexity measure</text>
+<text x="14" y="142.0" font-size="8.5" fill="#1c1f24" text-anchor="middle" transform="rotate(-90 14 142.0)">added ns/call vs plain (median)</text>
+<line x1="56" y1="30" x2="56" y2="254" stroke="#1c1f24" stroke-width="1"/>
+<line x1="56" y1="254" x2="444" y2="254" stroke="#1c1f24" stroke-width="1"/>
+<line x1="56" y1="228.1" x2="444" y2="228.1" stroke="#5b6671" stroke-width="1.2" stroke-dasharray="4 2"/>
+<text x="60" y="224.1" font-size="7.5" fill="#5b6671">plain (0)</text>
+<text x="466" y="88.5" font-size="7.6" font-weight="700" fill="#6b7480" letter-spacing="0.5">CONFIGURATION</text>
+<polyline points="56.0,232.3 153.0,228.1 250.0,228.1 347.0,228.1 444.0,228.1" fill="none" stroke="#8C4E08" stroke-width="2"/>
+<circle cx="56.0" cy="232.3" r="2.6" fill="#8C4E08"/>
+<circle cx="153.0" cy="228.1" r="2.6" fill="#8C4E08"/>
+<circle cx="250.0" cy="228.1" r="2.6" fill="#8C4E08"/>
+<circle cx="347.0" cy="228.1" r="2.6" fill="#8C4E08"/>
+<circle cx="444.0" cy="228.1" r="2.6" fill="#8C4E08"/>
+<line x1="466" y1="100.0" x2="480" y2="100.0" stroke="#8C4E08" stroke-width="2.2"/>
+<circle cx="473" cy="100.0" r="2.4" fill="#8C4E08"/>
+<text x="486" y="102.5" font-size="8" fill="#1c1f24">A flatten</text>
+<polyline points="56.0,223.8 153.0,223.8 250.0,219.6 347.0,215.3 444.0,217.4" fill="none" stroke="#0E6B4F" stroke-width="2"/>
+<circle cx="56.0" cy="223.8" r="2.6" fill="#0E6B4F"/>
+<circle cx="153.0" cy="223.8" r="2.6" fill="#0E6B4F"/>
+<circle cx="250.0" cy="219.6" r="2.6" fill="#0E6B4F"/>
+<circle cx="347.0" cy="215.3" r="2.6" fill="#0E6B4F"/>
+<circle cx="444.0" cy="217.4" r="2.6" fill="#0E6B4F"/>
+<line x1="466" y1="113.0" x2="480" y2="113.0" stroke="#0E6B4F" stroke-width="2.2"/>
+<circle cx="473" cy="113.0" r="2.4" fill="#0E6B4F"/>
+<text x="486" y="115.5" font-size="8" fill="#1c1f24">B harden</text>
+<polyline points="56.0,92.1 153.0,75.1 250.0,70.8 347.0,60.2 444.0,58.1" fill="none" stroke="#2850a0" stroke-width="2"/>
+<circle cx="56.0" cy="92.1" r="2.6" fill="#2850a0"/>
+<circle cx="153.0" cy="75.1" r="2.6" fill="#2850a0"/>
+<circle cx="250.0" cy="70.8" r="2.6" fill="#2850a0"/>
+<circle cx="347.0" cy="60.2" r="2.6" fill="#2850a0"/>
+<circle cx="444.0" cy="58.1" r="2.6" fill="#2850a0"/>
+<line x1="466" y1="126.0" x2="480" y2="126.0" stroke="#2850a0" stroke-width="2.2"/>
+<circle cx="473" cy="126.0" r="2.4" fill="#2850a0"/>
+<text x="486" y="128.5" font-size="8" fill="#1c1f24">C variants</text>
+<polyline points="56.0,219.6 153.0,217.4 250.0,211.1 347.0,208.9 444.0,206.8" fill="none" stroke="#b07d2a" stroke-width="2"/>
+<circle cx="56.0" cy="219.6" r="2.6" fill="#b07d2a"/>
+<circle cx="153.0" cy="217.4" r="2.6" fill="#b07d2a"/>
+<circle cx="250.0" cy="211.1" r="2.6" fill="#b07d2a"/>
+<circle cx="347.0" cy="208.9" r="2.6" fill="#b07d2a"/>
+<circle cx="444.0" cy="206.8" r="2.6" fill="#b07d2a"/>
+<line x1="466" y1="139.0" x2="480" y2="139.0" stroke="#b07d2a" stroke-width="2.2"/>
+<circle cx="473" cy="139.0" r="2.4" fill="#b07d2a"/>
+<text x="486" y="141.5" font-size="8" fill="#1c1f24">A+B</text>
+<polyline points="56.0,121.8 153.0,119.7 250.0,119.7 347.0,117.6 444.0,113.3" fill="none" stroke="#7a3a8c" stroke-width="2"/>
+<circle cx="56.0" cy="121.8" r="2.6" fill="#7a3a8c"/>
+<circle cx="153.0" cy="119.7" r="2.6" fill="#7a3a8c"/>
+<circle cx="250.0" cy="119.7" r="2.6" fill="#7a3a8c"/>
+<circle cx="347.0" cy="117.6" r="2.6" fill="#7a3a8c"/>
+<circle cx="444.0" cy="113.3" r="2.6" fill="#7a3a8c"/>
+<line x1="466" y1="152.0" x2="480" y2="152.0" stroke="#7a3a8c" stroke-width="2.2"/>
+<circle cx="473" cy="152.0" r="2.4" fill="#7a3a8c"/>
+<text x="486" y="154.5" font-size="8" fill="#1c1f24">A+C</text>
+<polyline points="56.0,104.8 153.0,81.4 250.0,79.3 347.0,62.3 444.0,64.4" fill="none" stroke="#0f8a86" stroke-width="2"/>
+<circle cx="56.0" cy="104.8" r="2.6" fill="#0f8a86"/>
+<circle cx="153.0" cy="81.4" r="2.6" fill="#0f8a86"/>
+<circle cx="250.0" cy="79.3" r="2.6" fill="#0f8a86"/>
+<circle cx="347.0" cy="62.3" r="2.6" fill="#0f8a86"/>
+<circle cx="444.0" cy="64.4" r="2.6" fill="#0f8a86"/>
+<line x1="466" y1="165.0" x2="480" y2="165.0" stroke="#0f8a86" stroke-width="2.2"/>
+<circle cx="473" cy="165.0" r="2.4" fill="#0f8a86"/>
+<text x="486" y="167.5" font-size="8" fill="#1c1f24">B+C</text>
+<polyline points="56.0,96.3 153.0,72.9 250.0,66.6 347.0,51.7 444.0,55.9" fill="none" stroke="#b02a37" stroke-width="2"/>
+<circle cx="56.0" cy="96.3" r="2.6" fill="#b02a37"/>
+<circle cx="153.0" cy="72.9" r="2.6" fill="#b02a37"/>
+<circle cx="250.0" cy="66.6" r="2.6" fill="#b02a37"/>
+<circle cx="347.0" cy="51.7" r="2.6" fill="#b02a37"/>
+<circle cx="444.0" cy="55.9" r="2.6" fill="#b02a37"/>
+<line x1="466" y1="178.0" x2="480" y2="178.0" stroke="#b02a37" stroke-width="2.2"/>
+<circle cx="473" cy="178.0" r="2.4" fill="#b02a37"/>
+<text x="486" y="180.5" font-size="8" fill="#1c1f24">A+B+C</text>
+</svg>

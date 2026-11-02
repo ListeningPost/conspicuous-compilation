@@ -1,0 +1,57 @@
+{
+  "per_variant": "flatten=1, harden=1, jumps=8, mba_depth=1",
+  "Ks": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "plain_ms": 55,
+  "rows": [
+    {
+      "k": 1,
+      "decompile_ms": 250,
+      "size_bytes": 479632,
+      "ratio": 4.55
+    },
+    {
+      "k": 2,
+      "decompile_ms": 501,
+      "size_bytes": 501504,
+      "ratio": 9.11
+    },
+    {
+      "k": 4,
+      "decompile_ms": 1045,
+      "size_bytes": 547072,
+      "ratio": 19.0
+    },
+    {
+      "k": 8,
+      "decompile_ms": 2279,
+      "size_bytes": 625792,
+      "ratio": 41.44
+    },
+    {
+      "k": 16,
+      "decompile_ms": 5427,
+      "size_bytes": 794376,
+      "ratio": 98.67
+    },
+    {
+      "k": 32,
+      "decompile_ms": 13777,
+      "size_bytes": 1138752,
+      "ratio": 250.49
+    },
+    {
+      "k": 64,
+      "decompile_ms": 38730,
+      "size_bytes": 1816656,
+      "ratio": 704.18
+    }
+  ]
+}

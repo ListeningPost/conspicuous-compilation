@@ -1,0 +1,33 @@
+<svg viewBox="0 0 460 300" xmlns="http://www.w3.org/2000/svg" font-family="Liberation Sans,Arial,sans-serif">
+<text x="249.0" y="15" font-size="11" font-weight="700" fill="#1c1f24" text-anchor="middle">Attack time grows with the number of diverse bodies (K)</text>
+<line x1="54" y1="254.0" x2="444" y2="254.0" stroke="#c9ccd2" stroke-width="0.5"/>
+<text x="48" y="257.0" font-size="8" fill="#6b7480" text-anchor="end">44ms</text>
+<line x1="54" y1="180.1" x2="444" y2="180.1" stroke="#c9ccd2" stroke-width="0.5"/>
+<text x="48" y="183.1" font-size="8" fill="#6b7480" text-anchor="end">440ms</text>
+<line x1="54" y1="106.2" x2="444" y2="106.2" stroke="#c9ccd2" stroke-width="0.5"/>
+<text x="48" y="109.2" font-size="8" fill="#6b7480" text-anchor="end">4.4s</text>
+<line x1="54" y1="32.3" x2="444" y2="32.3" stroke="#c9ccd2" stroke-width="0.5"/>
+<text x="48" y="35.3" font-size="8" fill="#6b7480" text-anchor="end">44s</text>
+<text x="54.0" y="268" font-size="8" fill="#6b7480" text-anchor="middle">1</text>
+<text x="119.0" y="268" font-size="8" fill="#6b7480" text-anchor="middle">2</text>
+<text x="184.0" y="268" font-size="8" fill="#6b7480" text-anchor="middle">4</text>
+<text x="249.0" y="268" font-size="8" fill="#6b7480" text-anchor="middle">8</text>
+<text x="314.0" y="268" font-size="8" fill="#6b7480" text-anchor="middle">16</text>
+<text x="379.0" y="268" font-size="8" fill="#6b7480" text-anchor="middle">32</text>
+<text x="444.0" y="268" font-size="8" fill="#6b7480" text-anchor="middle">64</text>
+<text x="249.0" y="294" font-size="8.5" fill="#1c1f24" text-anchor="middle">diverse bodies per function (K), each at jumps=8</text>
+<text x="14" y="141.0" font-size="8.5" fill="#1c1f24" text-anchor="middle" transform="rotate(-90 14 141.0)">decompile wall-clock (log)</text>
+<line x1="54" y1="28" x2="54" y2="254" stroke="#1c1f24" stroke-width="1"/>
+<line x1="54" y1="254" x2="444" y2="254" stroke="#1c1f24" stroke-width="1"/>
+<line x1="54" y1="246.8" x2="444" y2="246.8" stroke="#5b6671" stroke-width="1.2" stroke-dasharray="4 2"/>
+<text x="444" y="242.8" font-size="8" fill="#5b6671" text-anchor="end">plain 0.06s</text>
+<polyline points="54.0,198.2 119.0,175.9 184.0,152.4 249.0,127.3 314.0,99.5 379.0,69.6 444.0,36.4" fill="none" stroke="#0E6B4F" stroke-width="2.2"/>
+<circle cx="54.0" cy="198.2" r="3" fill="#0E6B4F"/>
+<circle cx="119.0" cy="175.9" r="3" fill="#0E6B4F"/>
+<circle cx="184.0" cy="152.4" r="3" fill="#0E6B4F"/>
+<circle cx="249.0" cy="127.3" r="3" fill="#0E6B4F"/>
+<circle cx="314.0" cy="99.5" r="3" fill="#0E6B4F"/>
+<circle cx="379.0" cy="69.6" r="3" fill="#0E6B4F"/>
+<circle cx="444.0" cy="36.4" r="3" fill="#0E6B4F"/>
+<text x="444.0" y="29.4" font-size="9" fill="#0E6B4F" text-anchor="end" font-weight="700">K=64: 38.7s</text>
+</svg>

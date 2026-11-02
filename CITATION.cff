@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+title: "Conspicuous Compilation: Raising the Wall-Clock Cost of Automated Reverse Engineering"
+message: "If you use this software or its results, please cite the preprint."
+type: software
+authors:
+  - family-names: Berry
+    given-names: William Spicer
+    affiliation: "Listening Post, Inc."
+    email: wberry@listeningpost.ai
+  - family-names: Steele
+    given-names: Seth
+    affiliation: "Listening Post, Inc."
+  - family-names: Steele
+    given-names: Daniel
+    affiliation: "Listening Post, Inc."
+repository-code: "https://github.com/ListeningPost/conspicuous-compilation"
+license: Apache-2.0
+date-released: "2026-10-26"
+keywords:
+  - software protection
+  - control-flow flattening
+  - opaque predicates
+  - mixed boolean arithmetic
+  - runtime diversity
+  - decompilation cost
+preferred-citation:
+  type: article
+  title: "Conspicuous Compilation: Raising the Wall-Clock Cost of Automated Reverse Engineering"
+  authors:
+    - family-names: Berry
+      given-names: William Spicer
+      affiliation: "Listening Post, Inc."
+    - family-names: Steele
+      given-names: Seth
+      affiliation: "Listening Post, Inc."
+    - family-names: Steele
+      given-names: Daniel
+      affiliation: "Listening Post, Inc."
+  year: 2026
+  notes: "Preprint. arXiv identifier pending; update this field once assigned."

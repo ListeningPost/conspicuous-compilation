@@ -1,0 +1,63 @@
+{
+  "setting": "jumps=64, mba_depth=2",
+  "Ns": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    48,
+    64
+  ],
+  "rows": [
+    {
+      "n": 1,
+      "plain_ms": 3,
+      "obf_ms": 122,
+      "ratio": 40.67
+    },
+    {
+      "n": 2,
+      "plain_ms": 6,
+      "obf_ms": 278,
+      "ratio": 46.33
+    },
+    {
+      "n": 4,
+      "plain_ms": 15,
+      "obf_ms": 598,
+      "ratio": 39.87
+    },
+    {
+      "n": 8,
+      "plain_ms": 27,
+      "obf_ms": 1157,
+      "ratio": 42.85
+    },
+    {
+      "n": 16,
+      "plain_ms": 35,
+      "obf_ms": 2221,
+      "ratio": 63.46
+    },
+    {
+      "n": 32,
+      "plain_ms": 80,
+      "obf_ms": 4462,
+      "ratio": 55.77
+    },
+    {
+      "n": 48,
+      "plain_ms": 123,
+      "obf_ms": 6891,
+      "ratio": 56.02
+    },
+    {
+      "n": 64,
+      "plain_ms": 231,
+      "obf_ms": 9302,
+      "ratio": 40.27
+    }
+  ]
+}

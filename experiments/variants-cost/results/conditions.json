@@ -1,0 +1,106 @@
+{
+  "seed": "7",
+  "per_variant": "flatten=1, harden=1, jumps=8, mba_depth=1",
+  "Ks": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "corpus_functions": [
+    "fn_lcg",
+    "fn_even_fib_sum",
+    "fn_collatz_len",
+    "fn_popcount_mix",
+    "fn_branch_ladder",
+    "fn_gcd_sum",
+    "fn_bitrev",
+    "fn_sbox_round",
+    "fn_sum_primes",
+    "fn_matrix_trace",
+    "fn_crc_like",
+    "fn_state_machine",
+    "fn_nested_loops",
+    "fn_hash_probe",
+    "fn_saturating_ops",
+    "fn_poly_eval"
+  ],
+  "gate_checksum": "CHECKSUM=17786522303719185614",
+  "conditions": [
+    {
+      "condition": "plain",
+      "attr": "#[inline(never)]",
+      "binary": "/home/wsb/Documents/Binaries/LLNV_adjusted/experiments/variants-cost/results/bin/corpus_plain",
+      "sha256": "fe31508496ff078b575fa01979ea9d7a809fcc612691ffd65734a9c956a11ab2",
+      "size_bytes": 455376,
+      "checksum": "CHECKSUM=17786522303719185614",
+      "checksum_ok": true
+    },
+    {
+      "condition": "var_k1",
+      "attr": "#[llnv_obfuscate(flatten=1, harden=1, jumps=8, mba_depth=1, variants=1)]",
+      "binary": "/home/wsb/Documents/Binaries/LLNV_adjusted/experiments/variants-cost/results/bin/corpus_var_k1",
+      "sha256": "b2dd64bd6126d340a703a59d41d1898924dcb503b8ddef6d341ead89e3424b43",
+      "size_bytes": 479632,
+      "checksum": "CHECKSUM=17786522303719185614",
+      "checksum_ok": true
+    },
+    {
+      "condition": "var_k2",
+      "attr": "#[llnv_obfuscate(flatten=1, harden=1, jumps=8, mba_depth=1, variants=2)]",
+      "binary": "/home/wsb/Documents/Binaries/LLNV_adjusted/experiments/variants-cost/results/bin/corpus_var_k2",
+      "sha256": "6fa4d06d13ae60e3f345381382d8840361a8201b3fe7431167c1299014eaa573",
+      "size_bytes": 501504,
+      "checksum": "CHECKSUM=17786522303719185614",
+      "checksum_ok": true
+    },
+    {
+      "condition": "var_k4",
+      "attr": "#[llnv_obfuscate(flatten=1, harden=1, jumps=8, mba_depth=1, variants=4)]",
+      "binary": "/home/wsb/Documents/Binaries/LLNV_adjusted/experiments/variants-cost/results/bin/corpus_var_k4",
+      "sha256": "2635851507c5c0e47d489475d49b5b8ebfa45c1acc57d7ccf17b7ca0d155eaf6",
+      "size_bytes": 547072,
+      "checksum": "CHECKSUM=17786522303719185614",
+      "checksum_ok": true
+    },
+    {
+      "condition": "var_k8",
+      "attr": "#[llnv_obfuscate(flatten=1, harden=1, jumps=8, mba_depth=1, variants=8)]",
+      "binary": "/home/wsb/Documents/Binaries/LLNV_adjusted/experiments/variants-cost/results/bin/corpus_var_k8",
+      "sha256": "357b9938071b66659bf7cfa08d79c24340c560edf12b0183d598746f659d8a9a",
+      "size_bytes": 625792,
+      "checksum": "CHECKSUM=17786522303719185614",
+      "checksum_ok": true
+    },
+    {
+      "condition": "var_k16",
+      "attr": "#[llnv_obfuscate(flatten=1, harden=1, jumps=8, mba_depth=1, variants=16)]",
+      "binary": "/home/wsb/Documents/Binaries/LLNV_adjusted/experiments/variants-cost/results/bin/corpus_var_k16",
+      "sha256": "75e5474e8c71032009f8480880de5b3760eb0dfce6637be4e0554af40665b881",
+      "size_bytes": 794376,
+      "checksum": "CHECKSUM=17786522303719185614",
+      "checksum_ok": true
+    },
+    {
+      "condition": "var_k32",
+      "attr": "#[llnv_obfuscate(flatten=1, harden=1, jumps=8, mba_depth=1, variants=32)]",
+      "binary": "/home/wsb/Documents/Binaries/LLNV_adjusted/experiments/variants-cost/results/bin/corpus_var_k32",
+      "sha256": "c7dd419255d145d7a3a5a96f96c384f8a18e7e0240bdeeb101ea0bff634afc33",
+      "size_bytes": 1138752,
+      "checksum": "CHECKSUM=17786522303719185614",
+      "checksum_ok": true
+    },
+    {
+      "condition": "var_k64",
+      "attr": "#[llnv_obfuscate(flatten=1, harden=1, jumps=8, mba_depth=1, variants=64)]",
+      "binary": "/home/wsb/Documents/Binaries/LLNV_adjusted/experiments/variants-cost/results/bin/corpus_var_k64",
+      "sha256": "3190e18963ee82e3f9eab1d691b3f81ea25208a0643069d43770228423f5cdd9",
+      "size_bytes": 1816656,
+      "checksum": "CHECKSUM=17786522303719185614",
+      "checksum_ok": true
+    }
+  ]
+}

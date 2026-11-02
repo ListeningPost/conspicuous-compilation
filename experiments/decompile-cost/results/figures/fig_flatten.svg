@@ -1,0 +1,65 @@
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="Liberation Sans,Arial,sans-serif">
+  <style>
+    .lbl{font-size:12px;fill:#444b54}
+    .cap{font-size:11px;fill:#6b7480}
+    .node{fill:#eef1f0;stroke:#5b6671;stroke-width:1.2}
+    .real{fill:#d8ece4;stroke:#0E6B4F;stroke-width:1.6}
+    .bogus{fill:#f6f4ef;stroke:#b9a06a;stroke-width:1}
+    .disp{fill:#0E6B4F;stroke:#0E6B4F}
+    .edge{stroke:#5b6671;stroke-width:1.1;fill:none;marker-end:url(#a)}
+    .bedge{stroke:#c3ad78;stroke-width:0.8;fill:none;stroke-dasharray:3 2;marker-end:url(#ab)}
+    .redge{stroke:#0E6B4F;stroke-width:1.4;fill:none;marker-end:url(#ar)}
+    .t{font-size:10px;fill:#1c1f24;font-family:Liberation Mono,monospace}
+    .tw{font-size:10px;fill:#ffffff;font-family:Liberation Mono,monospace}
+  </style>
+  <defs>
+    <marker id="a" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#5b6671"/></marker>
+    <marker id="ab" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#c3ad78"/></marker>
+    <marker id="ar" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#0E6B4F"/></marker>
+  </defs>
+
+  <!-- LEFT: original linear CFG -->
+  <text x="60" y="24" class="lbl" font-weight="700">Original control flow</text>
+  <rect class="node" x="60" y="40" width="96" height="26" rx="3"/><text x="108" y="57" class="t" text-anchor="middle">entry</text>
+  <rect class="node" x="60" y="86" width="96" height="26" rx="3"/><text x="108" y="103" class="t" text-anchor="middle">loop test</text>
+  <rect class="node" x="60" y="132" width="96" height="26" rx="3"/><text x="108" y="149" class="t" text-anchor="middle">if even</text>
+  <rect class="node" x="60" y="178" width="96" height="26" rx="3"/><text x="108" y="195" class="t" text-anchor="middle">step</text>
+  <rect class="real" x="60" y="224" width="96" height="26" rx="3"/><text x="108" y="241" class="t" text-anchor="middle">return</text>
+  <path class="edge" d="M108,66 L108,84"/>
+  <path class="edge" d="M108,112 L108,130"/>
+  <path class="edge" d="M108,158 L108,176"/>
+  <path class="edge" d="M108,204 L108,222"/>
+  <path class="edge" d="M156,99 C196,99 196,53 162,53" /><!-- back edge -->
+  <text x="300" y="150" class="cap" text-anchor="middle">flatten</text>
+  <path class="edge" d="M250,145 L348,145" stroke-width="1.6"/>
+
+  <!-- RIGHT: flattened dispatcher star -->
+  <text x="420" y="24" class="lbl" font-weight="700">Flattened + hardened dispatcher</text>
+  <circle class="disp" cx="540" cy="150" r="30"/><text x="540" y="147" class="tw" text-anchor="middle">switch</text><text x="540" y="160" class="tw" text-anchor="middle">state</text>
+  <!-- real segments -->
+  <rect class="real" x="470" y="40" width="70" height="22" rx="3"/><text x="505" y="55" class="t" text-anchor="middle">entry</text>
+  <rect class="real" x="612" y="60" width="70" height="22" rx="3"/><text x="647" y="75" class="t" text-anchor="middle">test</text>
+  <rect class="real" x="624" y="150" width="70" height="22" rx="3"/><text x="659" y="165" class="t" text-anchor="middle">even</text>
+  <rect class="real" x="612" y="236" width="70" height="22" rx="3"/><text x="647" y="251" class="t" text-anchor="middle">step</text>
+  <rect class="real" x="470" y="256" width="70" height="22" rx="3"/><text x="505" y="271" class="t" text-anchor="middle">return</text>
+  <!-- bogus states -->
+  <rect class="bogus" x="398" y="70" width="52" height="20" rx="3"/><text x="424" y="84" class="t" text-anchor="middle">b7</text>
+  <rect class="bogus" x="386" y="150" width="52" height="20" rx="3"/><text x="412" y="164" class="t" text-anchor="middle">b3</text>
+  <rect class="bogus" x="398" y="214" width="52" height="20" rx="3"/><text x="424" y="228" class="t" text-anchor="middle">b9</text>
+  <rect class="bogus" x="470" y="110" width="52" height="20" rx="3"/><text x="496" y="124" class="t" text-anchor="middle">b2</text>
+  <rect class="bogus" x="470" y="180" width="52" height="20" rx="3"/><text x="496" y="194" class="t" text-anchor="middle">b5</text>
+  <!-- real edges to/from dispatcher -->
+  <path class="redge" d="M540,62 L540,118"/>
+  <path class="redge" d="M612,71 L572,132"/>
+  <path class="redge" d="M624,161 L572,155"/>
+  <path class="redge" d="M612,247 L566,172"/>
+  <path class="redge" d="M540,256 L540,182"/>
+  <!-- bogus edges (dead, preserved by opaque predicate) -->
+  <path class="bedge" d="M450,80 L512,132"/>
+  <path class="bedge" d="M438,160 L508,152"/>
+  <path class="bedge" d="M450,222 L514,170"/>
+  <path class="bedge" d="M522,120 L518,128"/>
+  <path class="bedge" d="M522,188 L520,174"/>
+  <path class="bedge" d="M424,90 L412,148"/>
+  <path class="bedge" d="M412,170 L424,212"/>
+</svg>

@@ -1,0 +1,31 @@
+<svg viewBox="0 0 460 300" xmlns="http://www.w3.org/2000/svg" font-family="Liberation Sans,Arial,sans-serif">
+<text x="250.0" y="16" font-size="11" font-weight="700" fill="#1c1f24" text-anchor="middle">Method B alone (harden): runtime vs level</text>
+<line x1="56" y1="254.0" x2="444" y2="254.0" stroke="#c9ccd2" stroke-width="0.5"/>
+<text x="50" y="257.0" font-size="8" fill="#6b7480" text-anchor="end">-2</text>
+<line x1="56" y1="198.0" x2="444" y2="198.0" stroke="#c9ccd2" stroke-width="0.5"/>
+<text x="50" y="201.0" font-size="8" fill="#6b7480" text-anchor="end">-0</text>
+<line x1="56" y1="142.0" x2="444" y2="142.0" stroke="#c9ccd2" stroke-width="0.5"/>
+<text x="50" y="145.0" font-size="8" fill="#6b7480" text-anchor="end">2</text>
+<line x1="56" y1="86.0" x2="444" y2="86.0" stroke="#c9ccd2" stroke-width="0.5"/>
+<text x="50" y="89.0" font-size="8" fill="#6b7480" text-anchor="end">3</text>
+<line x1="56" y1="30.0" x2="444" y2="30.0" stroke="#c9ccd2" stroke-width="0.5"/>
+<text x="50" y="33.0" font-size="8" fill="#6b7480" text-anchor="end">5</text>
+<text x="56.0" y="268" font-size="8" fill="#6b7480" text-anchor="middle">1</text>
+<text x="153.0" y="268" font-size="8" fill="#6b7480" text-anchor="middle">2</text>
+<text x="250.0" y="268" font-size="8" fill="#6b7480" text-anchor="middle">3</text>
+<text x="347.0" y="268" font-size="8" fill="#6b7480" text-anchor="middle">4</text>
+<text x="444.0" y="268" font-size="8" fill="#6b7480" text-anchor="middle">5</text>
+<text x="250.0" y="294" font-size="8.5" fill="#1c1f24" text-anchor="middle">ordinal level (1&#8211;5), not a complexity measure</text>
+<text x="14" y="142.0" font-size="8.5" fill="#1c1f24" text-anchor="middle" transform="rotate(-90 14 142.0)">added ns/call vs plain (median)</text>
+<line x1="56" y1="30" x2="56" y2="254" stroke="#1c1f24" stroke-width="1"/>
+<line x1="56" y1="254" x2="444" y2="254" stroke="#1c1f24" stroke-width="1"/>
+<line x1="56" y1="190.0" x2="444" y2="190.0" stroke="#5b6671" stroke-width="1.2" stroke-dasharray="4 2"/>
+<text x="60" y="186.0" font-size="7.5" fill="#5b6671">plain (0)</text>
+<polyline points="56.0,158.0 153.0,158.0 250.0,126.0 347.0,94.0 444.0,110.0" fill="none" stroke="#0E6B4F" stroke-width="2"/>
+<circle cx="56.0" cy="158.0" r="2.6" fill="#0E6B4F"/>
+<circle cx="153.0" cy="158.0" r="2.6" fill="#0E6B4F"/>
+<circle cx="250.0" cy="126.0" r="2.6" fill="#0E6B4F"/>
+<circle cx="347.0" cy="94.0" r="2.6" fill="#0E6B4F"/>
+<circle cx="444.0" cy="110.0" r="2.6" fill="#0E6B4F"/>
+<text x="444.0" y="105.0" font-size="8" fill="#0E6B4F" text-anchor="end" font-weight="700">B harden</text>
+</svg>

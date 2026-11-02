@@ -1,0 +1,226 @@
+// LLNV decompile-cost corpus (Rust-only).
+//
+// A population of small, pure functions of varied control-flow shape. Each is a
+// standalone symbol (`#[no_mangle] extern "C"`) kept out of the inliner so the
+// decompiler must recover it individually. Every function reads/writes an 8-word
+// scratch buffer and returns a u64; `main` folds all returns into one checksum,
+// which is the correctness gate: it must be byte-identical across plain, method-1,
+// method-2, both, and every knob level. Same work in, same answer out — only the
+// recovered representation changes.
+//
+// The token `/*ATTR*/` on the line above each function is the only thing the
+// build generator rewrites per condition. It becomes `#[inline(never)]` for the
+// plain baseline, or `#[llnv_obfuscate(..)]` for an obfuscated condition (the
+// macro supplies its own `#[inline(never)]`).
+
+#![allow(unused_imports, unused_parens, clippy::all)]
+use llnv_rust_obf::llnv_obfuscate;
+use std::hint::black_box;
+
+#[inline(always)]
+fn wmul(a: u64, b: u64) -> u64 { a.wrapping_mul(b) }
+
+/*ATTR*/
+#[no_mangle]
+pub extern "C" fn fn_lcg(buf: &mut [u64; 8], n: u64) -> u64 {
+    let mut x = buf[0] ^ n;
+    let mut i = 0u64;
+    while i < 64 {
+        x = wmul(x, 6364136223846793005).wrapping_add(1442695040888963407);
+        i += 1;
+    }
+    buf[0] = x;
+    x
+}
+
+/*ATTR*/
+#[no_mangle]
+pub extern "C" fn fn_even_fib_sum(buf: &mut [u64; 8], _n: u64) -> u64 {
+    buf[0] = 1; buf[1] = 2; buf[2] = 0;
+    while buf[0] <= 4_000_000 {
+        if (buf[0] & 1) == 0 { buf[2] = buf[2].wrapping_add(buf[0]); }
+        let t = buf[0].wrapping_add(buf[1]);
+        buf[0] = buf[1]; buf[1] = t;
+    }
+    buf[2]
+}
+
+/*ATTR*/
+#[no_mangle]
+pub extern "C" fn fn_collatz_len(_buf: &mut [u64; 8], n: u64) -> u64 {
+    let mut x = (n % 100_000) | 1;
+    let mut steps = 0u64;
+    while x != 1 {
+        if (x & 1) == 0 { x >>= 1; } else { x = wmul(3, x).wrapping_add(1); }
+        steps += 1;
+        if steps > 10_000 { break; }
+    }
+    steps
+}
+
+/*ATTR*/
+#[no_mangle]
+pub extern "C" fn fn_popcount_mix(buf: &mut [u64; 8], n: u64) -> u64 {
+    let mut acc = 0u64;
+    for i in 0..8u64 {
+        let v = buf[i as usize] ^ wmul(n, i + 1);
+        acc = acc.wrapping_add((v.count_ones() as u64) ^ (v.rotate_left((i as u32) & 63)));
+    }
+    acc
+}
+
+/*ATTR*/
+#[no_mangle]
+pub extern "C" fn fn_branch_ladder(_buf: &mut [u64; 8], n: u64) -> u64 {
+    let m = n % 13;
+    let r = if m < 2 { n.wrapping_add(7) }
+        else if m < 4 { n ^ 0xdead_beef }
+        else if m < 6 { n.rotate_left(17) }
+        else if m < 8 { wmul(n, 0x9e37_79b9) }
+        else if m < 10 { n.wrapping_sub(1).rotate_right(5) }
+        else if m < 12 { !n }
+        else { n >> 3 };
+    r ^ m
+}
+
+/*ATTR*/
+#[no_mangle]
+pub extern "C" fn fn_gcd_sum(_buf: &mut [u64; 8], n: u64) -> u64 {
+    fn gcd(mut a: u64, mut b: u64) -> u64 { while b != 0 { let t = b; b = a % b; a = t; } a }
+    let mut s = 0u64;
+    for k in 1..200u64 {
+        s = s.wrapping_add(gcd((n % 9973) + k, k * 7 + 1));
+    }
+    s
+}
+
+/*ATTR*/
+#[no_mangle]
+pub extern "C" fn fn_bitrev(_buf: &mut [u64; 8], n: u64) -> u64 {
+    let mut x = n;
+    let mut r = 0u64;
+    for _ in 0..64 { r = (r << 1) | (x & 1); x >>= 1; }
+    r
+}
+
+/*ATTR*/
+#[no_mangle]
+pub extern "C" fn fn_sbox_round(buf: &mut [u64; 8], n: u64) -> u64 {
+    let mut x = buf[1] ^ n;
+    for r in 0..16u64 {
+        x = x.rotate_left(((r * 5) & 63) as u32);
+        x ^= wmul(x >> 3, 0xff51afd7ed558ccd);
+        x = x.wrapping_add(r * 0x1000193);
+    }
+    buf[1] = x;
+    x
+}
+
+/*ATTR*/
+#[no_mangle]
+pub extern "C" fn fn_sum_primes(_buf: &mut [u64; 8], n: u64) -> u64 {
+    let lim = 2000 + (n % 1000);
+    let mut s = 0u64;
+    let mut c = 2u64;
+    while c < lim {
+        let mut p = true;
+        let mut d = 2u64;
+        while d * d <= c { if c % d == 0 { p = false; break; } d += 1; }
+        if p { s = s.wrapping_add(c); }
+        c += 1;
+    }
+    s
+}
+
+/*ATTR*/
+#[no_mangle]
+pub extern "C" fn fn_matrix_trace(buf: &mut [u64; 8], n: u64) -> u64 {
+    let mut acc = 0u64;
+    for i in 0..3 {
+        for j in 0..3 {
+            let v = wmul(buf[i], buf[j].wrapping_add(n)) ^ ((i as u64) << 8 | j as u64);
+            if i == j { acc = acc.wrapping_add(v); } else { acc ^= v >> 1; }
+        }
+    }
+    acc
+}
+
+/*ATTR*/
+#[no_mangle]
+pub extern "C" fn fn_crc_like(buf: &mut [u64; 8], n: u64) -> u64 {
+    let mut crc = 0xffff_ffff_ffff_ffffu64 ^ n;
+    for i in 0..8usize {
+        crc ^= buf[i];
+        for _ in 0..8 {
+            if (crc & 1) != 0 { crc = (crc >> 1) ^ 0xC96C5795D7870F42; } else { crc >>= 1; }
+        }
+    }
+    crc
+}
+
+/*ATTR*/
+#[no_mangle]
+pub extern "C" fn fn_state_machine(_buf: &mut [u64; 8], n: u64) -> u64 {
+    let mut st = 0u64;
+    let mut out = 0u64;
+    let mut x = n;
+    for _ in 0..50 {
+        st = match st {
+            0 => if (x & 1) == 0 { 1 } else { 2 },
+            1 => { out = out.wrapping_add(x); 3 }
+            2 => { out ^= x.rotate_left(11); 3 }
+            3 => { out = out.wrapping_mul(31).wrapping_add(x & 0xff); 0 }
+            _ => 0,
+        };
+        x = x.rotate_right(7).wrapping_add(0x9e3779b97f4a7c15);
+    }
+    out
+}
+
+/*ATTR*/
+#[no_mangle]
+pub extern "C" fn fn_nested_loops(_buf: &mut [u64; 8], n: u64) -> u64 {
+    let mut acc = 0u64;
+    for i in 0..20u64 {
+        for j in 0..20u64 {
+            if (i + j) % 3 == 0 { acc = acc.wrapping_add(wmul(i + 1, j + 1) ^ n); }
+            else { acc ^= (i.wrapping_sub(j)).rotate_left(((i + j) & 63) as u32); }
+        }
+    }
+    acc
+}
+
+/*ATTR*/
+#[no_mangle]
+pub extern "C" fn fn_hash_probe(buf: &mut [u64; 8], n: u64) -> u64 {
+    let mut h = 1469598103934665603u64 ^ n;
+    for i in 0..8 {
+        h ^= buf[i];
+        h = wmul(h, 1099511628211);
+        h ^= h >> 23;
+    }
+    h
+}
+
+/*ATTR*/
+#[no_mangle]
+pub extern "C" fn fn_saturating_ops(_buf: &mut [u64; 8], n: u64) -> u64 {
+    let mut a = n;
+    let mut b = n ^ 0x5555_5555_5555_5555;
+    for k in 0..40u64 {
+        a = a.saturating_add(b.rotate_left((k & 63) as u32));
+        b = b.saturating_sub(a >> 2);
+        if a > b { a ^= b; } else { b ^= a; }
+    }
+    a ^ b
+}
+
+/*ATTR*/
+#[no_mangle]
+pub extern "C" fn fn_poly_eval(_buf: &mut [u64; 8], n: u64) -> u64 {
+    let coeffs = [3u64, 5, 7, 11, 13, 17, 19, 23];
+    let x = n % 10_000;
+    let mut acc = 0u64;
+    for &c in coeffs.iter() { acc = acc.wrapping_mul(x).wrapping_add(c); }
+    acc
+}

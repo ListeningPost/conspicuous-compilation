@@ -1,0 +1,14 @@
+[package]
+name = "llnv-rust-obf"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.94"
+description = "LLNV #[llnv_obfuscate] attribute macro: per-function control-flow flattening, MBA masking, and bogus-CFG inflation for Rust (LLVM backend)."
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "2", features = ["full", "parsing"] }
+quote = "1"
+proc-macro2 = "1"

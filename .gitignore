@@ -1,0 +1,13 @@
+# build artifacts
+/tmp/
+
+# encrypted vault data (never commit secrets/state)
+*.enc
+vault.enc
+
+# internal working notes (not for publication)
+recent.md
+
+# python caches
+__pycache__/
+*.pyc
