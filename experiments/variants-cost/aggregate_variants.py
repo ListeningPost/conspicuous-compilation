@@ -96,6 +96,7 @@ def make_fig(rows, plain):
     lx = lambda v: x0 + (x1 - x0) * (math.log2(v) - math.log2(xmin)) / (math.log2(xmax) - math.log2(xmin))
     ly = lambda v: y1 - (y1 - y0) * (math.log10(max(v, ymin)) - math.log10(ymin)) / (math.log10(ymax) - math.log10(ymin))
     p = [f'<svg viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg" font-family="Liberation Sans,Arial,sans-serif">']
+    p.append(f'<rect x="0" y="0" width="{W}" height="{H}" fill="#eef4fb"/>')
     p.append(f'<text x="{(x0+x1)/2}" y="15" font-size="11" font-weight="700" fill="{INK}" text-anchor="middle">Attack time grows with the number of diverse bodies (K)</text>')
     dd = ymin
     while dd <= ymax:

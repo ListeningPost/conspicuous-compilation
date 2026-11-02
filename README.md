@@ -37,9 +37,10 @@ turned up. Behaviour is identical throughout.
 
 ![Decompile wall-clock rises with the obfuscation dial](experiments/decompile-cost/results/figures/fig_attacktime.svg)
 
-**2. The methods are super-additive — the cost is in the combination.** Either static
-method alone is nearly free to decompile; applied together they cost far more than the
-sum of their parts (52x combined where independence predicts 2x).
+**2. The methods are super-additive — the cost is in the combination.** Each method
+alone is cheap to decompile (flatten 1x, harden 2x); applied together the slowdown is
+far more than the sum of the parts — 52x for the two static methods, and 704x once the
+runtime-selected diverse variants are stacked on top.
 
 ![Only the two methods together cost real decompile time](experiments/decompile-cost/results/figures/fig_methods.svg)
 
