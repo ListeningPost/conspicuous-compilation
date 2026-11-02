@@ -95,6 +95,7 @@ def make_fig(rows):
     X = lambda v: x0 + (x1 - x0) * v / xmax
     Y = lambda v: y1 - (y1 - y0) * v / ymax
     p = [f'<svg viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg" font-family="Liberation Sans,Arial,sans-serif">']
+    p.append(f'<rect x="0" y="0" width="{W}" height="{H}" fill="#eef4fb"/>')
     p.append(f'<text x="{(x0+x1)/2}" y="15" font-size="11" font-weight="700" fill="{INK}" text-anchor="middle">Attack time grows linearly with the number of obfuscated functions</text>')
     # y grid
     import math as _m

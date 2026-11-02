@@ -16,8 +16,10 @@ RES = HERE / "results"
 FIG = RES / "figures"
 FIG.mkdir(parents=True, exist_ok=True)
 S = json.loads((RES / "results.json").read_text())["summary"]
+VS = json.loads((HERE.parent / "variants-cost" / "results" / "results.json").read_text())
 
 ACCENT, SLATE, AMBER, INK, FAINT, RULE = "#0E6B4F", "#5b6671", "#8C4E08", "#1c1f24", "#6b7480", "#c9ccd2"
+VAR, BG = "#2850a0", "#eef4fb"
 
 JUMPS = [8, 16, 32, 64, 128, 256]
 sec = lambda c: S[c]["decompile_total_ms"] / 1000.0
@@ -39,6 +41,7 @@ def fig_attacktime():
     X = lambda j: logmap(j, xmin, xmax, x0, x1)
     Y = lambda v: logmap(max(v, ymin), ymin, ymax, y1, y0)
     p = [f'<svg viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg" font-family="Liberation Sans,Arial,sans-serif">']
+    p.append(f'<rect x="0" y="0" width="{W}" height="{H}" fill="{BG}"/>')
     p.append(f'<text x="{(x0+x1)/2}" y="15" font-size="11" font-weight="700" fill="{INK}" text-anchor="middle">Wall-clock to decompile the corpus rises with the dial</text>')
     for d in (0.03, 0.1, 1, 10, 30):
         yy = Y(d)
@@ -69,30 +72,36 @@ def fig_attacktime():
 
 
 def fig_methods():
-    W, H = 360, 250
-    L, R, T, Bm = 50, 14, 40, 52
+    """Decompile cost by method, as x vs plain (log). Each bar is a ratio to its
+    OWN plain baseline, so the A+B+C bar (from the variants experiment, jumps=8)
+    is comparable even though it is a different absolute run than the jumps=64 bars."""
+    W, H = 440, 260
+    L, R, T, Bm = 50, 14, 44, 56
     x0, x1, y0, y1 = L, W - R, T, H - Bm
-    conds = [("plain", "plain", SLATE), ("m1_j64", "A\n(flatten)", AMBER),
-             ("m2_d2", "B\n(harden)", AMBER), ("both_j64_d2", "A+B", ACCENT)]
-    vals = [sec(c) for c, _, _ in conds]       # seconds
-    rats = [S[c]["decompile_ratio_median"] for c, _, _ in conds]
-    ymin, ymax = 0.03, 10.0
+    # ratios vs plain
+    ab = [("m1_j64", "A\nflatten", AMBER, S["m1_j64"]["decompile_ratio_median"]),
+          ("m2_d2", "B\nharden", AMBER, S["m2_d2"]["decompile_ratio_median"]),
+          ("both_j64_d2", "A+B\nj=64", ACCENT, S["both_j64_d2"]["decompile_ratio_median"])]
+    # A+B+C from the variants sweep (each body is flatten+harden+jumps=8; K diverse bodies)
+    kmax = VS["rows"][-1]
+    abc = ("A+B+C\nK=%d" % kmax["k"], VAR, kmax["ratio"])
+    bars = [("plain", SLATE, 1.0)] + [(lab, col, r) for _, lab, col, r in ab] + [(abc[0], abc[1], abc[2])]
+    ymin, ymax = 1.0, 1000.0
     Y = lambda v: y1 - (y1 - y0) * (math.log10(max(v, ymin)) - math.log10(ymin)) / (math.log10(ymax) - math.log10(ymin))
     p = [f'<svg viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg" font-family="Liberation Sans,Arial,sans-serif">']
-    p.append(f'<text x="{(x0+x1)/2}" y="14" font-size="11" font-weight="700" fill="{INK}" text-anchor="middle">Only the two methods together cost real time</text>')
-    p.append(f'<text x="{(x0+x1)/2}" y="27" font-size="8.5" fill="{FAINT}" text-anchor="middle">decompile wall-clock at jumps=64</text>')
-    for d in (0.03, 0.1, 1, 10):
+    p.append(f'<rect x="0" y="0" width="{W}" height="{H}" fill="{BG}"/>')
+    p.append(f'<text x="{(x0+x1)/2}" y="15" font-size="11" font-weight="700" fill="{INK}" text-anchor="middle">Each method is cheap alone; stacking them is super-additive</text>')
+    p.append(f'<text x="{(x0+x1)/2}" y="28" font-size="8.5" fill="{FAINT}" text-anchor="middle">decompile slowdown vs plain (log); A/B/A+B at jumps=64, A+B+C from the variants sweep</text>')
+    for d in (1, 10, 100, 1000):
         yy = Y(d)
         p.append(f'<line x1="{x0}" y1="{yy:.1f}" x2="{x1}" y2="{yy:.1f}" stroke="{RULE}" stroke-width="0.5"/>')
-        lab = f"{d:g}s" if d >= 1 else f"{int(d*1000)}ms"
-        p.append(f'<text x="{x0-5}" y="{yy+3:.1f}" font-size="8" fill="{FAINT}" text-anchor="end">{lab}</text>')
-    n = len(conds); bw = (x1 - x0) / n * 0.56
-    for i, ((c, lab, col), v, rr) in enumerate(zip(conds, vals, rats)):
+        p.append(f'<text x="{x0-5}" y="{yy+3:.1f}" font-size="8" fill="{FAINT}" text-anchor="end">{d}&#215;</text>')
+    n = len(bars); bw = (x1 - x0) / n * 0.58
+    for i, (lab, col, r) in enumerate(bars):
         cx = x0 + (x1 - x0) * (i + 0.5) / n
-        yy = Y(v)
+        yy = Y(r)
         p.append(f'<rect x="{cx-bw/2:.1f}" y="{yy:.1f}" width="{bw:.1f}" height="{y1-yy:.1f}" fill="{col}" rx="2"/>')
-        tlab = f"{v:.2f}s" if v >= 1 else f"{v*1000:.0f}ms"
-        p.append(f'<text x="{cx:.1f}" y="{yy-4:.1f}" font-size="8.5" fill="{INK}" text-anchor="middle" font-weight="700">{tlab}</text>')
+        p.append(f'<text x="{cx:.1f}" y="{yy-4:.1f}" font-size="8.5" fill="{INK}" text-anchor="middle" font-weight="700">{r:.0f}&#215;</text>')
         for k, ln in enumerate(lab.split("\n")):
             p.append(f'<text x="{cx:.1f}" y="{y1+14+k*10:.1f}" font-size="8" fill="{FAINT}" text-anchor="middle">{ln}</text>')
     p.append(f'<line x1="{x0}" y1="{y1}" x2="{x1}" y2="{y1}" stroke="{INK}" stroke-width="1"/>')

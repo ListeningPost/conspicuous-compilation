@@ -27,6 +27,37 @@ times plain and is **super-additive** across methods (52x combined where indepen
 methods are free at runtime and only the diversity method costs. Attacker cost scales with all
 three knobs; defender cost scales with one.
 
+## See the claims in four pictures
+
+*(Figures regenerate from clean runs; see "Reproduce it yourself" below.)*
+
+**1. The attacker's wall-clock cost climbs with the dial.** Decompiling the same
+corpus goes from 61 ms plain to about 20 s — 384x — as the one obfuscation knob is
+turned up. Behaviour is identical throughout.
+
+![Decompile wall-clock rises with the obfuscation dial](experiments/decompile-cost/results/figures/fig_attacktime.svg)
+
+**2. The methods are super-additive — the cost is in the combination.** Each method
+alone is cheap to decompile (flatten 1x, harden 2x); applied together the slowdown is
+far more than the sum of the parts — 52x for the two static methods, and 704x once the
+runtime-selected diverse variants are stacked on top.
+
+![Only the two methods together cost real decompile time](experiments/decompile-cost/results/figures/fig_methods.svg)
+
+**3. The defender barely pays.** Added runtime per call stays tiny across every method
+and level — the two static methods are free at runtime, and only the diversity method
+costs anything measurable.
+
+![Added runtime per call is small across all methods and levels](experiments/decompile-cost/results/figures/fig_runtime.svg)
+
+**4. Attacker cost scales with every knob; defender cost scales with one.** Decompile
+time grows with the number of diverse variants per function and linearly with the number
+of obfuscated functions.
+
+![Attack time grows with the number of diverse bodies](experiments/variants-cost/results/figures/fig_variants.svg)
+
+![Attack time grows linearly with the number of obfuscated functions](experiments/breadth-cost/results/figures/fig_breadth.svg)
+
 ## Reproduce it yourself — please do
 
 Every figure regenerates from clean builds. On AC power with the CPU governor pinned to
